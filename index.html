@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Інтерактивна збірка задач з механічного руху: умови, покрокові розв’язки та правило руху річкою."><title>Механічний рух · Задачі та розв’язки</title>
+<style>
+:root{--paper:#fcfbf7;--ink:#172a36;--muted:#5e6b72;--line:#d9e0dd;--accent:#17766f;--soft:#e8f2ee;--red:#b52727}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}button,input,a{ -webkit-tap-highlight-color:transparent}button,a,input,summary{outline-offset:5px}a{color:var(--accent)}button{cursor:pointer;font:inherit}.skip{position:absolute;top:-70px;background:white;padding:10px;z-index:20}.skip:focus{top:0}.top{max-width:1180px;margin:auto;padding:25px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;display:flex;gap:12px;align-items:center}.symbol{background:var(--accent);color:white;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font:italic 25px Georgia}.download{text-decoration:none;border:1px solid var(--line);padding:7px 15px;border-radius:8px;font-size:14px}.hero{max-width:1180px;padding:50px 32px 35px;margin:auto;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:end}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.15em;font-weight:750}h1{font:clamp(38px,6vw,64px)/1.1 Georgia,serif;margin:12px 0 17px;letter-spacing:-.035em}.hero p{color:var(--muted);max-width:560px;margin:0}.stat{border-left:1px solid var(--line);padding-left:30px;color:var(--muted);font-size:14px}.stat strong{display:block;font:48px Georgia;color:var(--accent)}.toolbar{position:sticky;top:0;background:rgba(252,251,247,.97);z-index:5;border-block:1px solid var(--line)}.tools{max-width:1180px;margin:auto;padding:15px 32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.tabs{display:flex;gap:5px}.tabs button{padding:8px 12px;border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;font-size:14px}.tabs button[aria-pressed=true]{background:var(--accent);color:white}.search{margin-left:auto;position:relative}.search input{width:245px;border:1px solid var(--line);border-radius:7px;background:white;padding:10px 12px;font:14px system-ui}.workspace{max-width:1180px;margin:30px auto 80px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:34px;padding:0 32px}.sidebar{position:sticky;top:105px;align-self:start;max-height:calc(100vh - 130px);overflow:auto;font-size:13px}.sidebar h2{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 12px}.sidebar a{display:block;text-decoration:none;color:var(--muted);padding:7px 10px;border-left:2px solid var(--line)}.sidebar a:hover{color:var(--accent);border-left-color:var(--accent);background:var(--soft)}.utility{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:20px;font-size:13px;color:var(--muted)}.utility button{border:0;background:transparent;color:var(--accent);padding:4px 0}.utility #count{margin-right:auto}.exercise{background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:24px;box-shadow:0 3px 12px #172a3603;overflow:hidden;scroll-margin-top:110px}.exercise-header{padding:24px 28px 8px}.topic-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:750}.exercise h2{font:700 24px/1.3 Georgia,serif;margin:7px 0 9px}.permalink{float:right;text-decoration:none;font-size:18px;color:#80968d}.condition{padding:0 28px 22px;font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:1.65}.solution{border-top:1px solid var(--line)}summary{cursor:pointer;padding:14px 28px;background:#f5f8f5;font-size:14px;font-weight:650;color:var(--accent)}summary:hover{background:var(--soft)}.table-scroll{overflow-x:auto;padding:20px}.table-scroll table{border-collapse:collapse;width:100%;font:17px/1.55 Georgia,'Times New Roman',serif}.table-scroll th,.table-scroll td{border:1px solid #76878a;padding:12px;vertical-align:top;text-align:left}.table-scroll th{background:#f4f6f4;font-weight:bold}.given{width:22%;min-width:110px}.reasoning{width:auto;min-width:320px}.reasoning h4{font:bold italic 17px/1.45 Georgia,serif;margin:16px 0 8px}.reasoning h4:first-child{margin-top:0}.paragraph-gap{height:8px}hr{border:0;border-top:1px solid #76878a;margin:12px 0}.rule{border:1px solid #ebc5bf;border-left:4px solid var(--red);border-radius:10px;margin:0 0 25px;background:#fff7f5;color:var(--red)}.rule summary{color:var(--red);background:transparent;font-size:15px}.rule-body{padding:5px 24px 24px;font:17px/1.65 Georgia,serif;overflow-x:auto}.rule-body .paragraph-gap{height:10px}mjx-container[display=true]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:5px 0}#empty{padding:40px;border:1px dashed var(--line);text-align:center;border-radius:10px}main{min-width:0}footer{max-width:1180px;margin:auto;padding:24px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}noscript{display:block;padding:20px;text-align:center}[hidden]{display:none!important}.math-status{font-size:12px;color:var(--muted);padding:0 28px}.math-status:empty{display:none}@media(max-width:1000px){.workspace{grid-template-columns:1fr}.sidebar{display:none}.tools{gap:9px}.search{margin-left:0;flex:1}.search input{width:100%}.stat{display:none}}@media(max-width:600px){.top{padding:16px}.hero{padding:32px 18px}.brand{letter-spacing:.04em;font-size:12px}.download{padding:6px 10px}.tools{padding:10px 14px}.tabs{width:100%}.tabs button{font-size:12px;padding:7px 9px}.search{width:100%}.workspace{padding:0 12px;margin-top:20px}.exercise-header{padding:20px 18px 6px}.exercise h2{font-size:23px}.condition{padding:0 18px 20px;font-size:17px}.table-scroll{padding:12px}.table-scroll table{font-size:16px}.table-scroll td{padding:9px}.reasoning{min-width:285px}footer{padding:20px 18px;flex-direction:column}}@media print{body{background:white;color:black}.top,.hero,.toolbar,.sidebar,.utility,footer,.permalink,summary{display:none}.workspace{display:block;margin:0;padding:0}.exercise{break-inside:avoid;border:0;box-shadow:none;border-radius:0}.exercise[hidden]{display:none}.condition{font-size:12pt}.table-scroll{padding:0;overflow:visible}.table-scroll table{font-size:10pt}.rule-body{font-size:11pt}.rule{break-inside:avoid}.solution:not([open])>*:not(summary){display:block}}
+</style>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],packages:{'[+]':['ams']}},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{pageReady:()=>MathJax.startup.defaultPageReady().then(()=>{document.getElementById('math-status').textContent='';})}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" onerror="document.getElementById('math-status').textContent='Не вдалося завантажити формули. Перевірте інтернет або відкрийте PDF.'"></script>
+</head><body><a class="skip" href="#main">Перейти до задач</a><header class="top"><div class="brand"><span class="symbol" aria-hidden="true">s</span>Фізика · Практикум</div><a class="download" href="exercises.pdf">Завантажити PDF ↗</a></header><section class="hero"><div><span class="eyebrow">Досліджуємо рух</span><h1>Механічний рух</h1><p>Спробуй розв’язати самостійно, а потім відкрий пояснення. Кожна формула — крок до розуміння.</p></div><div class="stat"><strong>16</strong>задач із розв’язками</div></section><nav class="toolbar" aria-label="Фільтри задач"><div class="tools"><div class="tabs"><button type="button" data-filter="all" aria-pressed="true">Усі задачі</button><button type="button" data-filter="straight" aria-pressed="false">Прямолінійний рух</button><button type="button" data-filter="river" aria-pressed="false">За / проти течії</button></div><label class="search"><span class="sr-only" hidden>Пошук задач</span><input id="search" aria-label="Пошук за номером або словом" placeholder="Номер задачі або слово…" type="search"></label></div></nav><div class="workspace"><aside class="sidebar"><h2>Зміст збірки</h2><nav id="contents" aria-label="Зміст"></nav></aside><main id="main"><div class="utility"><span id="count" role="status" aria-live="polite"></span><button id="expand" type="button">Відкрити всі</button><button id="collapse" type="button">Згорнути всі</button><button id="print" type="button">Друкувати</button></div><p id="math-status" class="math-status" role="status">Завантаження формул…</p><details class="rule" id="river-rule"><summary>Правило: рух за течією та проти течії</summary><div class="rule-body"><div class="paragraph-gap"></div>\(v_{\text{ч}}\) — власна швидкість човна відносно води; \(v_{\text{р}}\) — швидкість течії річки; \(v_{\text{за}}\) і \(v_{\text{проти}}\) — швидкості човна відносно берега. Для руху проти течії потрібно \(v_{\text{ч}}&gt;v_{\text{р}}\).
+\[
+\begin{cases}
+v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
+v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
+\end{cases}
+\]
+<strong>Додаємо рівняння почленно:</strong> додаємо ліві частини та окремо праві. Доданки \(+v_{\text{р}}\) і \(-v_{\text{р}}\) взаємно знищуються:
+\[
+(v_{\text{ч}}+v_{\text{р}})+(v_{\text{ч}}-v_{\text{р}})=v_{\text{за}}+v_{\text{проти}},
+\]
+\[2v_{\text{ч}}=v_{\text{за}}+v_{\text{проти}},\qquad
+v_{\text{ч}}=\frac{v_{\text{за}}+v_{\text{проти}}}{2}.
+\]
+<strong>Віднімаємо друге рівняння від першого:</strong> знак мінус перед дужками змінює знаки обох доданків у дужках:
+\[
+(v_{\text{ч}}+v_{\text{р}})-(v_{\text{ч}}-v_{\text{р}})=v_{\text{за}}-v_{\text{проти}},
+\]
+\[2v_{\text{р}}=v_{\text{за}}-v_{\text{проти}},\qquad
+v_{\text{р}}=\frac{v_{\text{за}}-v_{\text{проти}}}{2}.
+\]
+<strong>Якщо відомі власна швидкість і швидкість течії</strong>, обчислюємо окремо:
+\[v_{\text{за}}=v_{\text{ч}}+v_{\text{р}},\qquad v_{\text{проти}}=v_{\text{ч}}-v_{\text{р}}.\]
+<strong>Як користуватися правилом.</strong> Додавання двох рівнянь дає власну швидкість човна, віднімання — швидкість течії. Швидкість за течією знаходимо з першого рівняння, проти течії — з другого. Це правило можна використовувати в усіх наступних задачах про рух річкою.</div></details><div id="exercises"><article class="exercise" id="exercise-1" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-1" aria-label="Посилання на задачу">#</a><h2>Задача 1.28. Обгін поїздів</h2></header><div class="condition"><strong>Умова.</strong> Два поїзди однакової довжини їдуть паралельними коліями в одному напрямку. Швидкість першого поїзда дорівнює 120 км/год, а швидкість другого — 66 км/год. Перший поїзд обганяє другий протягом 1 хв. Чому дорівнює довжина кожного поїзда?<div class="paragraph-gap"></div><strong>Переведення швидкостей у СІ.</strong> Оскільки \(1\,\text{км}=1000\,\text{м}\), а \(1\,\text{год}=3600\,\text{с}\), то
+\[
+1\,\frac{\text{км}}{\text{год}}=\frac{1000\,\text{м}}{3600\,\text{с}}=\frac{1}{3{,}6}\,\frac{\text{м}}{\text{с}}.
+\]
+Отже, щоб перевести км/год у м/с, числове значення ділимо на \(3{,}6\):
+\[
+v_1=120\cdot\frac{1000}{3600}=\frac{100}{3}\,\text{м/с},\qquad
+v_2=66\cdot\frac{1000}{3600}=\frac{55}{3}\,\text{м/с}.
+\]</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_1=120\,\text{км/год}\)<br>
+\(v_2=66\,\text{км/год}\)<br>
+\(t=1\,\text{хв}\)<br>
+\(l_1=l_2=l\)
+<hr>\(l-?\)</td><td class="given">\(v_1=\dfrac{100}{3}\,\text{м/с}\)<br>
+\(v_2=\dfrac{55}{3}\,\text{м/с}\)<br>
+\(t=60\,\text{с}\)</td><td class="reasoning"><h4>Розглянемо рух першого поїзда відносно другого.</h4>
+Оскільки поїзди рухаються в одному напрямку, відносна швидкість дорівнює різниці швидкостей:
+\[v_{\text{відн}}=v_1-v_2.\]
+<h4>Для повного обгону треба подолати суму довжин обох поїздів.</h4>
+Від початку обгону, коли голова першого поїзда зрівнялася з хвостом другого, до завершення, коли хвіст першого зрівнявся з головою другого, відносний шлях становить
+\[s_{\text{відн}}=l_1+l_2=2l.\]
+Тому
+\[(v_1-v_2)t=2l,\]
+\[l=\frac{(v_1-v_2)t}{2}.\]
+Обчислимо відносну швидкість:
+\[v_{\text{відн}}=\frac{120-66}{3{,}6}=15\,\text{м/с}.\]
+\[l=\frac{15\cdot60}{2}=450\,\text{м}.\]
+<strong>Перевірка:</strong> \(2\cdot450/15=60\,\text{с}\).
+<br><strong>Відповідь:</strong> довжина кожного поїзда \(450\,\text{м}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-2" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-2" aria-label="Посилання на задачу">#</a><h2>Задача 1.51. Відстань між автомобілями</h2></header><div class="condition"><strong>Умова.</strong> Із двох міст, що розміщені на відстані 300 км один від одного, прямою дорогою одночасно назустріч один одному виїхали вантажівка зі швидкістю 40 км/год і таксі зі швидкістю 60 км/год. Через скільки часу після виїзду відстань між автомобілями дорівнюватиме 100 км?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s_{\text{міст}} =300\,\text{км}\)<br>
+\(s_{\text{зустрічі}}=100\,\text{км}\)<br>
+\(v_1=40\,\text{км/год}\)<br>
+\(v_2=60\,\text{км/год}\)
+<hr>\(t_1-?\)<br> \(t_2-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div>Позначимо відстань між містами через \(s_{\text{міст}}\), а задану відстань між автомобілями — через \(s_{\text{зустрічі}}\).<br>
+<h4>За зустрічного руху швидкість зближення \(v_{\text{збл}}\) дорівнює сумі швидкостей.</h4>
+\[v_{\text{збл}} =v_1+v_2.\]
+До зустрічі відстань \(s_{\text{зустрічі}}=s_{\text{міст}} -v_{\text{збл}} t\), тому
+\[t_1=\frac{s_{\text{міст}} -s_{\text{зустрічі}}}{v_1+v_2}.\]
+Після зустрічі автомобілі віддаляються, і \(s_{\text{зустрічі}}=v_{\text{збл}} t-s_{\text{міст}} \), звідки
+\[t_2=\frac{s_{\text{міст}} +s_{\text{зустрічі}}}{v_1+v_2}.\]
+Обчислюємо в км та годинах:
+\[v_{\text{збл}} =40+60=100\,\text{км/год},\]
+\[t_1=\frac{300-100}{100}=2\,\text{год},\]
+\[t_2=\frac{300+100}{100}=4\,\text{год}.\]
+Зустріч відбудеться через \(300/100=3\,\text{год}\). Другий результат передбачає, що автомобілі продовжують рух після зустрічі.
+<br><strong>Відповідь:</strong> через 2 год і через 4 год після виїзду.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-3" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-3" aria-label="Посилання на задачу">#</a><h2>Задача 1.52. Мишко та Сашко</h2></header><div class="condition"><strong>Умова.</strong> Мишко вийшов із селища і пішов прямою дорогою зі швидкістю 5 км/год. Через годину з цього селища в тому самому напрямку виїхав велосипедом Сашко і поїхав зі швидкістю 15 км/год. Через скільки часу після виїзду відстань між ними дорівнює 2,5 км?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_{\text{М}}=5\,\text{км/год}\)<br>
+\(v_{\text{С}}=15\,\text{км/год}\)<br>
+\(t_{\text{зат}}=1\,\text{год}\)<br>
+\(s_{\text{зустрічі}}=2{,}5\,\text{км}\)
+<hr>\(t_1-?\)<br> \(t_2-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Відлічуємо час від виїзду Сашка.</h4>
+Позначимо початкову відстань до Мишка через \(s_{\text{поч}}\), а задану відстань між хлопцями — через \(s_{\text{зустрічі}}\). За годину Мишко відійшов на відстань
+\[s_{\text{поч}} =v_{\text{М}}t_{\text{зат}}.\]
+Сашко скорочує відстань зі швидкістю зближення \(v_{\text{збл}}\):
+\[v_{\text{збл}} =v_{\text{С}}-v_{\text{М}}.\]
+До наздоганяння \(s_{\text{зустрічі}}=s_{\text{поч}} -v_{\text{збл}} t_1\), а після нього \(s_{\text{зустрічі}}=v_{\text{збл}} t_2-s_{\text{поч}} \). Тому
+\[t_1=\frac{s_{\text{поч}} -s_{\text{зустрічі}}}{v_{\text{збл}} },\qquad t_2=\frac{s_{\text{поч}} +s_{\text{зустрічі}}}{v_{\text{збл}} }.\]
+Підставляємо числа в км та годинах:
+\[s_{\text{поч}} =5\cdot1=5\,\text{км},\quad v_{\text{збл}} =15-5=10\,\text{км/год}.\]
+\[t_1=\frac{5-2{,}5}{10}=0{,}25\,\text{год},\]
+\[t_2=\frac{5+2{,}5}{10}=0{,}75\,\text{год}.\]
+Переводимо в хвилини: \(0{,}25\cdot60=15\), \(0{,}75\cdot60=45\).
+<br><strong>Відповідь:</strong> через 15 хв і через 45 хв після виїзду Сашка.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-4" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-4" aria-label="Посилання на задачу">#</a><h2>Задача 1.64. Середня швидкість Петрика</h2></header><div class="condition"><strong>Умова.</strong> Петрик пройшов 10 км за 2 год, а потім проїхав велосипедом 20 км за 1 год. Чому дорівнює середня швидкість Петрика?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s_1=10\,\text{км}\)<br>
+\(t_1=2\,\text{год}\)<br>
+\(s_2=20\,\text{км}\)<br>
+\(t_2=1\,\text{год}\)
+<hr>\(v_{\text{сер}}-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Середня швидкість дорівнює всьому шляху, поділеному на весь час руху.</h4>
+\[v_{\text{сер}}=\frac{s}{t}.\]
+Для двох ділянок \(s=s_1+s_2\), \(t=t_1+t_2\), отже
+\[v_{\text{сер}}=\frac{s_1+s_2}{t_1+t_2}.\]
+Обчислимо в кілометрах і годинах:
+\[v_{\text{сер}}=\frac{10+20}{2+1}=10\,\text{км/год}.\]
+Середнє арифметичне швидкостей ділянок тут не підходить, бо час руху на них різний.
+<br><strong>Відповідь:</strong> \(10\,\text{км/год}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-5" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-5" aria-label="Посилання на задачу">#</a><h2>Задача О-14. Середня швидкість автомобіля</h2></header><div class="condition"><strong>Умова.</strong> Автомобіль проїхав половину шляху зі швидкістю 60 км/год; половину решти часу він їхав зі швидкістю 15 км/год, а останню ділянку — зі швидкістю 45 км/год. Яка середня швидкість на всьому шляху?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_1=60\,\text{км/год}\)<br>
+\(v_2=15\,\text{км/год}\)<br>
+\(v_3=45\,\text{км/год}\)<br>
+\(s_1=s/2\)<br>
+\(t_2=t_3\)
+<hr>\(v_{\text{сер}}-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Крок 1. Позначимо весь шлях через \(s\).</h4>
+Перша ділянка становить половину шляху: \(s_1=s/2\). Із формули \(v_1=s_1/t_1\) виражаємо час: множимо на \(t_1\) і ділимо на \(v_1\).
+\[v_1t_1=s_1,\qquad t_1=\frac{s_1}{v_1}=\frac{s}{2v_1}.\]
+<h4>Крок 2. Запишемо шляхи на двох останніх ділянках.</h4>
+Після першої ділянки залишилося \(s-s/2=s/2\). За умовою половину решти часу автомобіль їде з \(v_2\), іншу половину — з \(v_3\). Тому \(t_3=t_2\).
+\[s_2=v_2t_2,\qquad s_3=v_3t_3=v_3t_2.\]
+Сума цих шляхів дорівнює \(s/2\):
+\[\frac{s}{2}=v_2t_2+v_3t_2=(v_2+v_3)t_2.\]
+<h4>Крок 3. Виразимо час другої половини шляху.</h4>
+Ділимо обидві частини рівняння на \(v_2+v_3\):
+\[t_2=\frac{s}{2(v_2+v_3)}.\]
+Оскільки таких однакових проміжків часу два,
+\[t_{23}=t_2+t_3=2t_2=\frac{2s}{2(v_2+v_3)}=\frac{s}{v_2+v_3}.\]
+<h4>Крок 4. Знайдемо весь час руху.</h4>
+\[t=t_1+t_{23}=\frac{s}{2v_1}+\frac{s}{v_2+v_3}.\]
+Спільний знаменник — \(2v_1(v_2+v_3)\). Перший чисельник множимо на \(v_2+v_3\), другий — на \(2v_1\):
+\[t=\frac{s(v_2+v_3)+2v_1s}{2v_1(v_2+v_3)}=\frac{s(v_2+v_3+2v_1)}{2v_1(v_2+v_3)}.\]
+<h4>Крок 5. Поділимо весь шлях на весь час.</h4>
+Ділення на дріб замінюємо множенням на обернений дріб. Додатний шлях \(s\) скорочується:
+\[
+\begin{aligned}
+v_{\text{сер}}&amp;=\frac{s}{t}=s\cdot\frac{2v_1(v_2+v_3)}{s(v_2+v_3+2v_1)}\\
+&amp;=\frac{2v_1(v_2+v_3)}{v_2+v_3+2v_1}.
+\end{aligned}
+\]
+<h4>Крок 6. Підставимо швидкості в км/год.</h4>
+\[v_{\text{сер}}=\frac{2\cdot60\cdot(15+45)}{15+45+2\cdot60}=\frac{7200}{180}=40\,\text{км/год}.\]
+<strong>Відповідь:</strong> \(40\,\text{км/год}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-6" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-6" aria-label="Посилання на задачу">#</a><h2>Задача О-15. Велосипедист і пішохід</h2></header><div class="condition"><strong>Умова.</strong> Велосипедист половину часу всього руху їхав зі швидкістю 20 км/год, половину решти шляху зі швидкістю 12 км/год, а останню ділянку — йшов зі швидкістю 6 км/год. Яка середня швидкість на всьому шляху?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_1=20\,\text{км/год}\)<br>
+\(v_2=12\,\text{км/год}\)<br>
+\(v_3=6\,\text{км/год}\)<br>
+\(t_1=t /2\)<br>
+\(s_2=s_3\)
+<hr>\(v_{\text{сер}}-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>На двох останніх ділянках шляхи однакові, а час руху різний.</h4>
+Позначимо весь шлях через \(s\), а довжину другої ділянки — через \(s_2\). Третя ділянка має таку саму довжину: \(s_3=s_2\). Тоді
+\[t_2=\frac{s_2}{v_2},\qquad t_3=\frac{s_2}{v_3}.\]
+Середня швидкість на решті шляху:
+\[
+\begin{aligned}
+v_{23}&amp;=\frac{2s_2}{s_2/v_2+s_2/v_3}\\
+&amp;=\frac{2v_2v_3}{v_2+v_3}.
+\end{aligned}
+\]
+<h4>Перша частина руху та решта руху займають однаковий час \(t /2\).</h4>
+Загальний шлях і середня швидкість:
+\[s=v_1\frac{t }{2}+v_{23}\frac{t }{2},\]
+\[v_{\text{сер}}=\frac{s}{t }=\frac{v_1+v_{23}}{2}.\]
+Підставляємо числа:
+\[v_{23}=\frac{2\cdot12\cdot6}{12+6}=8\,\text{км/год},\]
+\[v_{\text{сер}}=\frac{20+8}{2}=14\,\text{км/год}.\]
+<strong>Відповідь:</strong> \(14\,\text{км/год}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-7" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-7" aria-label="Посилання на задачу">#</a><h2>Задача О-16. Мандрівник на коні та віслюку</h2></header><div class="condition"><strong>Умова.</strong> Мандрівник їхав спочатку на коні, а потім на віслюку. Яку частину шляху і яку частину всього часу руху він їхав на коні, якщо середня швидкість мандрівника, як виявилося, дорівнювала 12 км/год, швидкість їзди на коні 30 км/год, а на віслюку — 6 км/год?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_{\text{сер}}=12\,\text{км/год}\)<br>
+\(v_{\text{к}}=30\,\text{км/год}\)<br>
+\(v_{\text{в}}=6\,\text{км/год}\)
+<hr>\(t_{\text{к}}/t -?\)<br>
+\( s_{\text{к}}/s-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Виразимо весь шлях через час руху на коні та на віслюку.</h4>
+Нехай \(t \) — увесь час, \(t_{\text{к}}\) — час на коні. Тоді на віслюку мандрівник їхав \(t -t_{\text{к}}\):
+\[s=v_{\text{к}}t_{\text{к}}+v_{\text{в}}(t -t_{\text{к}}).\]
+Водночас \(s=v_{\text{сер}}t \). Отже,
+\[(v_{\text{сер}}-v_{\text{в}})t =(v_{\text{к}}-v_{\text{в}})t_{\text{к}}.\]
+Частина часу, проведена на коні:
+\[\frac{t_{\text{к}}}{t }=\frac{v_{\text{сер}}-v_{\text{в}}}{v_{\text{к}}-v_{\text{в}}}.\]
+<h4>Частку шляху знаходимо як відношення шляху на коні до всього шляху.</h4>
+\[\frac{s_{\text{к}}}{s}=\frac{v_{\text{к}}t_{\text{к}}}{v_{\text{сер}}t }=\frac{v_{\text{к}}}{v_{\text{сер}}}\cdot\frac{t_{\text{к}}}{t }.\]
+Підставляємо числа:
+\[\frac{t_{\text{к}}}{t }=\frac{12-6}{30-6}=\frac{6}{24}=\frac14,\]
+\[\frac{s_{\text{к}}}{s}=\frac{30}{12}\cdot\frac14=\frac58.\]
+<strong>Відповідь:</strong> на коні мандрівник проїхав \(\frac58\) усього шляху та витратив \(\frac14\) всього часу руху.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-8" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-8" aria-label="Посилання на задачу">#</a><h2>Задача О-17. П&#x27;ять кілометрів спортсмена</h2></header><div class="condition"><strong>Умова.</strong> Спортсмен подолав дистанцію 5 км. Перший кілометр він пробіг за 3 хв, а на кожний наступний кілометр у нього йшло на \(t\) секунд більше, ніж на попередній. Знайдіть \(t\), якщо відомо, що середня швидкість на всьому шляху виявилася такою, як коли б спортсмен пробігав кожний кілометр за 3 хв 12 с.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s=5\,\text{км}\)<br>
+\(s_1=1\,\text{км}\)<br>
+\(t_1=3\,\text{хв}\)<br>
+\(t_0=3\,\text{хв}\,12\,\text{с}\)
+<hr>\(\Delta t-?\)<div class="paragraph-gap"></div></td><td class="given"><div class="paragraph-gap"></div>\(t_1=3\cdot60\)<br>
+\(\phantom{t_1}=180\,\text{с}\)<br>
+\(t_0=3\cdot60+12\)<br>
+\(\phantom{t_0}=192\,\text{с}\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Крок 1. Визначимо кількість однакових ділянок.</h4>
+Дистанція становить 5 км, довжина кожної ділянки — 1 км. Отже, маємо п’ять однакових за довжиною ділянок: \(5:1=5\).
+Позначення: \(t_1\) — час першого кілометра; \(t_0\) — час одного кілометра за рівномірного бігу; \(\Delta t\) — шукане збільшення часу (у самій умові воно позначене буквою \(t\)); увесь час руху позначимо \(t\).
+<br>
+<h4>Крок 2. Знайдемо весь час за заданою середньою швидкістю.</h4>
+Якби кожний кілометр долали за \(t_0\), швидкість дорівнювала б \(v_0=s_1/t_0\). За умовою фактична середня швидкість така сама:
+\[\frac{s}{t }=\frac{s_1}{t_0}.\]
+Множимо обидві частини на \(t t_0\):
+\[st_0=s_1 t .\]
+Ділимо на \(s_1\) і враховуємо \(s/s_1=5\):
+\[t =\frac{s}{s_1}t_0=5t_0.\]
+<h4>Крок 3. Запишемо час кожного кілометра.</h4>
+Перший: \(t_1\). Другий: \(t_1+\Delta t\).
+Третій: \((t_1+\Delta t)+\Delta t=t_1+2\Delta t\).
+Четвертий: \((t_1+2\Delta t)+\Delta t=t_1+3\Delta t\).
+П&#x27;ятий: \((t_1+3\Delta t)+\Delta t=t_1+4\Delta t\).
+<br>
+<h4>Крок 4. Додамо п&#x27;ять проміжків часу.</h4>
+\[
+\begin{aligned}
+t ={}&amp;t_1+(t_1+\Delta t)+(t_1+2\Delta t)\\
+&amp;+(t_1+3\Delta t)+(t_1+4\Delta t).
+\end{aligned}
+\]
+Час \(t_1\) повторюється п&#x27;ять разів, а додатковий час становить \((1+2+3+4)\Delta t=10\Delta t\). Тому
+\[t =5t_1+10\Delta t.\]
+<h4>Крок 5. Прирівняємо вирази для всього часу.</h4>
+\[5t_0=5t_1+10\Delta t.\]
+Віднімаємо \(5t_1\) від обох частин:
+\[5t_0-5t_1=10\Delta t.\]
+Виносимо 5 за дужки й ділимо на 10:
+\[\Delta t=\frac{5(t_0-t_1)}{10}=\frac{t_0-t_1}{2}.\]
+<h4>Крок 6. Підставимо час у секундах.</h4>
+\[\Delta t=\frac{192-180}{2}=\frac{12}{2}=6\,\text{с}.\]
+<strong>Перевірка:</strong> \(180+186+192+198+204=960\,\text{с}\); також \(5\cdot192=960\,\text{с}\).
+<br><strong>Відповідь:</strong> \(\Delta t=6\,\text{с}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-9" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-9" aria-label="Посилання на задачу">#</a><h2>Задача 2. Повернення додому</h2></header><div class="condition"><strong>Умова.</strong> Хлопчик іде до школи зі швидкістю 3 км/год і розраховує встигнути до початку уроку. Пройшовши половину шляху, він згадує, що забув зачинити вхідні двері. З якою швидкістю повинен бігти хлопчик, щоб повернутись додому, зачинити двері і не запізнитись до школи? (Час, витрачений на зачинення дверей, не враховувати.)</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_0=3\,\text{км/год}\)<br>
+\(s_1=s/2\)<br>
+\(t_{\text{двері}}=0\)
+<hr>\(v-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Порівняємо запланований решту шляху з тим, який тепер треба пробігти.</h4>
+Нехай \(s\) — відстань від дому до школи. Вважаємо, що за початковим планом хлопчик мав прийти саме до початку уроку.
+Після проходження половини шляху залишився час
+\[t_{\text{зал}}=\frac{s/2}{v_0}=\frac{s}{2v_0}.\]
+<h4>Тепер хлопчик має повернутися пів шляху додому й пробігти весь шлях до школи.</h4>
+\[s_{\text{біг}}=\frac{s}{2}+s=\frac{3s}{2}.\]
+Найменша стала швидкість бігу:
+\[
+\begin{aligned}
+v&amp;=\frac{s_{\text{біг}}}{t_{\text{зал}}}\\
+&amp;=\frac{3s/2}{s/(2v_0)}=3v_0.
+\end{aligned}
+\]
+Підставляємо число:
+\[v=3\cdot3=9\,\text{км/год}.\]
+<strong>Відповідь:</strong> не менше \(9\,\text{км/год}\) за відсутності початкового запасу часу.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-10" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-10" aria-label="Посилання на задачу">#</a><h2>Задача 1. Туристи: пішки, автобусом та електричкою</h2></header><div class="condition"><strong>Умова (на фото позначено «9 клас»).</strong> Шлях від місця відпочинку до міста туристи подолали із середньою швидкістю 32 км/год частково пішки, частково автобусом, а потім електричкою. Визначити, з якою швидкістю пройдено кожен із відрізків шляху, якщо їхні довжини відносяться як \(1:4:45\), а відповідні інтервали часу — як \(4:1:20\).</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_{\text{сер}}=32\,\text{км/год}\)<br>
+\(s_1:s_2:s_3\)<br>
+\(\phantom{s_1}=1:4:45\)<br>
+\(t_1:t_2:t_3\)<br>
+\(\phantom{t_1}=4:1:20\)
+<hr>\(v_1-?\)<br>
+\(v_2-?\)<br>
+\(v_3-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Запишемо довжини та часи через одну спільну частину кожного відношення.</h4>
+Нехай \(a\) — одна частина шляху, \(b\) — одна частина часу. Тоді
+\[s_1=a,\quad s_2=4a,\quad s_3=45a;\]
+\[t_1=4b,\quad t_2=b,\quad t_3=20b.\]
+Увесь шлях і весь час:
+\[s=(1+4+45)a=50a,\]
+\[t =(4+1+20)b=25b.\]
+<h4>Середня швидкість дає змогу знайти відношення \(a/b\).</h4>
+\[v_{\text{сер}}=\frac{s}{t }=\frac{50a}{25b}=\frac{2a}{b},\]
+\[\frac{a}{b}=\frac{v_{\text{сер}}}{2}=\frac{32}{2}=16\,\text{км/год}.\]
+<h4>Для кожної ділянки ділимо її шлях на відповідний час.</h4>
+\[v_1=\frac{a}{4b}=\frac14\cdot16=4\,\text{км/год},\]
+\[v_2=\frac{4a}{b}=4\cdot16=64\,\text{км/год},\]
+\[v_3=\frac{45a}{20b}=\frac{45}{20}\cdot16=36\,\text{км/год}.\]
+<strong>Відповідь:</strong> пішки — \(4\,\text{км/год}\); автобусом — \(64\,\text{км/год}\); електричкою — \(36\,\text{км/год}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-11" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-11" aria-label="Посилання на задачу">#</a><h2>Задача 8. Середня швидкість поїзда</h2></header><div class="condition"><strong>Умова.</strong> Визначити середню швидкість поїзда, якщо на проходження окремих ділянок, довжини яких відносяться як \(1:3:4:2\), потрібно було затратити часу у відношенні \(2:4:3:1\) і на останній ділянці швидкість дорівнювала 80 км/год.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s_1:s_2:s_3:s_4\)<br>
+\(\phantom{s_1}=1:3:4:2\)<br>
+\(t_1:t_2:t_3:t_4\)<br>
+\(\phantom{t_1}=2:4:3:1\)<br>
+\(v_4=80\,\text{км/год}\)
+<hr>\(v_{\text{сер}}-?\)</td><td class="reasoning"><h4>Крок 1. Виразимо всі ділянки через довжину першої ділянки \(s\).</h4>
+З указаного відношення довжин:
+\[s_1=s,\quad s_2=3s,\quad s_3=4s,\quad s_4=2s.\]
+Тому весь шлях дорівнює
+\[s_{\text{заг}}=s+3s+4s+2s=10s.\]
+<h4>Крок 2. Виразимо часи через час останньої ділянки \(t_4\).</h4>
+Останній проміжок часу становить одну частину відношення. Отже,
+\[t_1=2t_4,\quad t_2=4t_4,\quad t_3=3t_4.\]
+Увесь час руху:
+\[t=2t_4+4t_4+3t_4+t_4=10t_4.\]
+<h4>Крок 3. Скористаємося швидкістю на останній ділянці.</h4>
+\[v_4=\frac{s_4}{t_4}=\frac{2s}{t_4}.\]
+Ділимо обидві частини на 2:
+\[\frac{s}{t_4}=\frac{v_4}{2}.\]
+<h4>Крок 4. Ділимо весь шлях на весь час.</h4>
+\[v_{\text{сер}}=\frac{s_{\text{заг}}}{t}=\frac{10s}{10t_4}=\frac{s}{t_4}=\frac{v_4}{2}.\]
+Підставляємо число:
+\[v_{\text{сер}}=\frac{80}{2}=40\,\text{км/год}.\]
+<strong>Відповідь:</strong> \(40\,\text{км/год}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-12" data-topic="straight"><header class="exercise-header"><span class="topic-label">Прямолінійний рух</span><a class="permalink" href="#exercise-12" aria-label="Посилання на задачу">#</a><h2>Задача 1.58. Рух ескалатором</h2></header><div class="condition"><strong>Умова.</strong> Коли Петрик стоїть на сходинці ескалатора, він спускається за 1 хв. Коли Петрик іде по ескалатору, що рухається вниз, він спускається за 30 с. Скільки часу Петрик спускатиметься, якщо йтиме удвічі швидше?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(t_0=1\,\text{хв}\)<br>
+\(t_1=30\,\text{с}\)<br>
+\(v&#x27;_\text{п}=2v_\text{п}\)
+<hr>\(t_2-?\)</td><td class="given">\(t_0=1\cdot60=60\,\text{с}\)</td><td class="reasoning"><h4>Швидкості ескалатора і Петрика відносно сходинок додаються.</h4>
+Нехай \(l\) — довжина спуску, \(v_{\text{е}}\) — швидкість ескалатора, \(v_{\text{п}}\) — швидкість ходьби Петрика відносно ескалатора.
+\[v_{\text{е}}=\frac{l}{t_0},\qquad v_{\text{е}}+v_{\text{п}}=\frac{l}{t_1}.\]
+Віднімаємо перше рівняння від другого:
+\[v_{\text{п}}=\frac{l}{t_1}-\frac{l}{t_0}.\]
+<h4>У третьому випадку подвоюється швидкість ходьби, а швидкість ескалатора стала.</h4>
+\[
+\begin{aligned}
+v_2&amp;=v_{\text{е}}+2v_{\text{п}}\\
+&amp;=\frac{l}{t_0}+2\left(\frac{l}{t_1}-\frac{l}{t_0}\right)\\
+&amp;=l\left(\frac{2}{t_1}-\frac{1}{t_0}\right).
+\end{aligned}
+\]
+Тоді
+\[t_2=\frac{l}{v_2}=\frac{t_0t_1}{2t_0-t_1}.\]
+\[t_2=\frac{60\cdot30}{2\cdot60-30}=20\,\text{с}.\]
+<strong>Відповідь:</strong> \(20\,\text{с}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-13" data-topic="river"><header class="exercise-header"><span class="topic-label">За течією та проти течії</span><a class="permalink" href="#exercise-13" aria-label="Посилання на задачу">#</a><h2>Рух човна за течією та проти течії річки</h2></header><div class="condition"><strong>Умова (8 клас).</strong> Моторний човен проплив 24 км за течією річки за 1,5 год, а таку саму відстань проти течії — за 2 год.<div class="paragraph-gap"></div>Визначте: 1) швидкість човна за течією річки; 2) швидкість човна проти течії річки; 3) власну швидкість човна (у стоячій воді); 4) швидкість течії річки; 5) на скільки хвилин швидше човен подолає відстань 36 км за течією, ніж проти течії.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s=24\,\text{км}\)<br>
+\(t_{\text{з}}=1{,}5\,\text{год}\)<br>
+\(t_{\text{п}}=2\,\text{год}\)<br>
+\(s_2 =36\,\text{км}\)
+<hr>\(v_{\text{за}}-?\)<br>
+\(v_{\text{проти}}-?\)<br>
+\(v_{\text{ч}}-?\)<br>
+\(v_{\text{р}} -?\)<br>
+\(\Delta t-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>1–2. Швидкість дорівнює шляху, поділеному на час.</h4>
+Індекси «за» і «проти» позначають рух за течією та проти течії:
+\[v_{\text{за}}=\frac{s}{t_{\text{з}}},\qquad v_{\text{проти}}=\frac{s}{t_{\text{п}}}.\]
+\[v_{\text{за}}=\frac{24}{1{,}5}=16\,\text{км/год},\]
+\[v_{\text{проти}}=\frac{24}{2}=12\,\text{км/год}.\]
+<h4>3–4. За течією швидкості додаються, проти течії — віднімаються.</h4>
+Нехай \(v_{\text{ч}}\) — власна швидкість човна, \(v_{\text{р}} \) — швидкість течії. Тоді
+\[
+\begin{cases}
+v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
+v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
+\end{cases}
+\]<div class="paragraph-gap"></div>Додавши рівняння, маємо \(2v_{\text{ч}}=v_{\text{за}}+v_{\text{проти}}\). Віднявши друге від першого, маємо \(2v_{\text{р}} =v_{\text{за}}-v_{\text{проти}}\). Отже,
+\[v_{\text{ч}}=\frac{v_{\text{за}}+v_{\text{проти}}}{2}=\frac{16+12}{2}=14\,\text{км/год},\]
+\[v_{\text{р}} =\frac{v_{\text{за}}-v_{\text{проти}}}{2}=\frac{16-12}{2}=2\,\text{км/год}.\]
+<h4>5. Знайдемо різницю часу проходження 36 км.</h4>
+\[\Delta t=\frac{s_2 }{v_{\text{проти}}}-\frac{s_2 }{v_{\text{за}}}.\]
+\[\Delta t=\frac{36}{12}-\frac{36}{16}=3-2{,}25=0{,}75\,\text{год}.\]
+\[\Delta t=0{,}75\cdot60=45\,\text{хв}.\]
+<strong>Відповідь:</strong> 1) \(16\,\text{км/год}\); 2) \(12\,\text{км/год}\); 3) \(14\,\text{км/год}\); 4) \(2\,\text{км/год}\); 5) на \(45\,\text{хв}\) швидше.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-14" data-topic="river"><header class="exercise-header"><span class="topic-label">За течією та проти течії</span><a class="permalink" href="#exercise-14" aria-label="Посилання на задачу">#</a><h2>Додаткова задача. Відстань між пристанями</h2></header><div class="condition"><strong>Умова (підвищена складність).</strong> Човен вирушив із пристані А до пристані Б, розташованої нижче за течією, і одразу повернувся назад. Уся подорож тривала 3,5 год. Визначте відстань між пристанями, якщо швидкості човна залишалися незмінними.<div class="paragraph-gap"></div>Використайте дані основної задачі: власна швидкість човна \(14\,\text{км/год}\), швидкість течії \(2\,\text{км/год}\).</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(t =3{,}5\,\text{год}\)<br>
+\(v_{\text{ч}}=14\,\text{км/год}\)<br>
+\(v_{\text{р}}=2\,\text{км/год}\)
+<hr>\(l-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Запишемо систему з правила й додамо рівняння.</h4>
+\[
+\begin{cases}
+v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
+v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
+\end{cases}
+\]
+\[2v_{\text{ч}}=v_{\text{за}}+v_{\text{проти}}.\]
+Отже, сума швидкостей відносно берега дорівнює \(2\cdot14=28\,\text{км/год}\).
+<h4>Знайдемо кожну швидкість окремо з відповідного рівняння системи.</h4>
+\[v_{\text{за}}=14+2=16\,\text{км/год},\]
+\[v_{\text{проти}}=14-2=12\,\text{км/год}.\]
+<h4>На обох ділянках відстань однакова, тому весь час дорівнює сумі двох відношень шляху до швидкості.</h4>
+Нехай \(l\) — відстань між пристанями. Час руху до Б та назад:
+\[t_{\text{з}}=\frac{l}{v_{\text{за}}},\qquad t_{\text{п}}=\frac{l}{v_{\text{проти}}}.\]
+Без зупинки в Б:
+\[t =t_{\text{з}}+t_{\text{п}}=\frac{l}{v_{\text{за}}}+\frac{l}{v_{\text{проти}}}.\]
+<h4>Зведемо дроби до спільного знаменника й виразимо відстань.</h4>
+\[t =\frac{l(v_{\text{проти}}+v_{\text{за}})}{v_{\text{за}}v_{\text{проти}}},\]
+\[l=\frac{t v_{\text{за}}v_{\text{проти}}}{v_{\text{за}}+v_{\text{проти}}}.\]
+Підставляємо швидкості в км/год і час у годинах:
+\[l=\frac{3{,}5\cdot16\cdot12}{16+12}=\frac{672}{28}=24\,\text{км}.\]
+<strong>Перевірка:</strong>
+\[t_{\text{з}}=\frac{24}{16}=1{,}5\,\text{год},\quad t_{\text{п}}=\frac{24}{12}=2\,\text{год},\]
+\[t_{\text{з}}+t_{\text{п}}=1{,}5+2=3{,}5\,\text{год}.\]
+<strong>Відповідь:</strong> відстань між пристанями \(24\,\text{км}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-15" data-topic="river"><header class="exercise-header"><span class="topic-label">За течією та проти течії</span><a class="permalink" href="#exercise-15" aria-label="Посилання на задачу">#</a><h2>Задача 1.56. Човен у річці й озері</h2></header><div class="condition"><strong>Умова.</strong> Моторний човен проплив річкою від пристані А до пристані Б і назад за 8 год. Таку саму відстань цей човен проплив в озері за 6 год. Швидкість човна відносно води не змінювалася. У скільки разів швидкість човна відносно води більша за швидкість течії річки?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(t_{\text{р}}=8\,\text{год}\)<br>
+\(t_{\text{оз}}=6\,\text{год}\)<br>
+\(v_{\text{ч}}\) — швидкість човна відносно води<br>
+\(v_{\text{р}} \) — швидкість течії
+<hr>\(v_{\text{ч}}/v_{\text{р}}-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Використаємо систему з правила.</h4>
+\[
+\begin{cases}
+v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
+v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
+\end{cases}
+\]
+Додавання дає \(v_{\text{за}}+v_{\text{проти}}=2v_{\text{ч}}\). Окремо з рівнянь: \(v_{\text{за}}=v_{\text{ч}}+v_{\text{р}}\), \(v_{\text{проти}}=v_{\text{ч}}-v_{\text{р}}\).
+<h4>Запишемо час руху за течією та проти неї.</h4>
+Нехай \(l\) — відстань між пристанями. Швидкості відносно берега: \(v_{\text{ч}}+v_{\text{р}} \) і \(v_{\text{ч}}-v_{\text{р}} \), причому \(v_{\text{ч}}&gt;v_{\text{р}} \).
+\[
+\begin{aligned}
+t_{\text{р}}&amp;=\frac{l}{v_{\text{ч}}+v_{\text{р}} }+\frac{l}{v_{\text{ч}}-v_{\text{р}} }\\
+&amp;=\frac{l(v_{\text{ч}}-v_{\text{р}} )+l(v_{\text{ч}}+v_{\text{р}} )}{v_{\text{ч}}^2-v_{\text{р}} ^2}\\
+&amp;=\frac{2l v_{\text{ч}}}{v_{\text{ч}}^2-v_{\text{р}} ^2}.
+\end{aligned}
+\]
+<h4>В озері човен долає такий самий повний шлях \(2l\).</h4>
+\[t_{\text{оз}}=\frac{2l}{v_{\text{ч}}}.\]
+Ділимо час в озері на час у річці:
+\[\frac{t_{\text{оз}}}{t_{\text{р}}}=\frac{v_{\text{ч}}^2-v_{\text{р}} ^2}{v_{\text{ч}}^2}=1-\left(\frac{v_{\text{р}} }{v_{\text{ч}}}\right)^2.\]
+Звідси
+\[\left(\frac{v_{\text{р}} }{v_{\text{ч}}}\right)^2=1-\frac{t_{\text{оз}}}{t_{\text{р}}},\]
+Підставляємо час в однакових одиницях:
+\[\left(\frac{v_{\text{р}} }{v_{\text{ч}}}\right)^2=1-\frac{6}{8}=\frac14.\]
+Отже, \(v_{\text{ч}}^2=4v_{\text{р}} ^2\). Оскільки
+\[(2v_{\text{р}} )^2=4v_{\text{р}} ^2,\]
+а обидві швидкості додатні, маємо \(v_{\text{ч}}=2v_{\text{р}} \).
+Таким чином,
+\[\frac{v_{\text{ч}}}{v_{\text{р}} }=2.\]
+<strong>Відповідь:</strong> у 2 рази.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-16" data-topic="river"><header class="exercise-header"><span class="topic-label">За течією та проти течії</span><a class="permalink" href="#exercise-16" aria-label="Посилання на задачу">#</a><h2>Задача 1.57. Час руху човна в озері</h2></header><div class="condition"><strong>Умова.</strong> Човен проплив з А в Б за течією за 2 год, а назад за 8 год. За скільки часу човен пропливе таку саму відстань в озері?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(t_1=2\,\text{год}\)<br>
+\(t_2=8\,\text{год}\)
+<hr>\(t_{\text{оз}}-?\)<div class="paragraph-gap"></div></td><td class="reasoning"><div class="paragraph-gap"></div><h4>Власна швидкість човна дорівнює півсумі швидкостей за течією та проти неї.</h4>
+Нехай \(l=AB\), \(v_{\text{ч}}\) — швидкість човна відносно води, \(v_{\text{р}} \) — швидкість течії.
+\[
+\begin{cases}
+v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
+v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
+\end{cases}
+\]
+Окремо швидкості відносно берега:
+\[v_{\text{за}}=\frac{l}{t_1},\qquad v_{\text{проти}}=\frac{l}{t_2}.\]<div class="paragraph-gap"></div>Додаємо рівняння системи: \(2v_{\text{ч}}=v_{\text{за}}+v_{\text{проти}}\). Підставляємо знайдені вирази:
+\[2v_{\text{ч}}=\frac{l}{t_1}+\frac{l}{t_2},\]
+\[v_{\text{ч}}=\frac{l(t_1+t_2)}{2t_1t_2}.\]
+<h4>Для проходження відстані \(AB\) в озері потрібен час \(l/v_{\text{ч}}\).</h4>
+\[t_{\text{оз}}=\frac{l}{v_{\text{ч}}}=\frac{2t_1t_2}{t_1+t_2}.\]
+\[t_{\text{оз}}=\frac{2\cdot2\cdot8}{2+8}=3{,}2\,\text{год}.\]
+Дробова частина години:
+\[0{,}2\cdot60=12\,\text{хв}.\]
+<strong>Відповідь:</strong> \(3\,\text{год}\,12\,\text{хв}\) на відстань \(AB\).
+<br> Якщо розглядати весь шлях туди й назад (\(2l\)), час в озері дорівнює \(6{,}4\,\text{год}=6\,\text{год}\,24\,\text{хв}\).</td></tr></tbody></table></div></details></article></div><p id="empty" hidden>Задач не знайдено. Змініть запит або оберіть іншу тему.</p></main></div><noscript>Для пошуку та фільтрів увімкніть JavaScript. Умови й розв’язки доступні нижче.</noscript><footer><span>Механічний рух · Збірка для навчання</span><a href="exercises.tex" download>Вихідний LaTeX</a></footer>
+<script>
+(()=>{'use strict';const cards=[...document.querySelectorAll('.exercise')],search=document.querySelector('#search'),count=document.querySelector('#count'),rule=document.querySelector('#river-rule');let filter='all';const normalize=s=>s.toLocaleLowerCase('uk').normalize('NFKC').replace(/[’ʼ']/g,'').replace(/\\[a-z]+/gi,' ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();const text=new Map(cards.map(c=>[c,normalize(c.textContent)]));const links=new Map();cards.forEach(c=>{const a=document.createElement('a');a.href='#'+c.id;a.textContent=c.querySelector('h2').textContent;document.querySelector('#contents').append(a);links.set(c,a);});function apply(){const q=normalize(search.value);let n=0;cards.forEach(c=>{const visible=(filter==='all'||c.dataset.topic===filter)&&(!q||text.get(c).includes(q));c.hidden=!visible;links.get(c).hidden=!visible;if(visible)n++;});count.textContent=`Показано ${n} із ${cards.length} задач`;document.querySelector('#empty').hidden=n>0;rule.hidden=filter==='straight';}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();}));search.addEventListener('input',apply);document.querySelector('#expand').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=true));document.querySelector('#collapse').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=false));let printState;addEventListener('beforeprint',()=>{printState=[...document.querySelectorAll('details')].map(d=>[d,d.open]);printState.forEach(([d])=>d.open=true);});addEventListener('afterprint',()=>printState?.forEach(([d,open])=>d.open=open));document.querySelector('#print').addEventListener('click',()=>window.print());function deepLink(){const id=decodeURIComponent(location.hash.slice(1));const card=cards.find(c=>c.id===id);if(!card)return;filter='all';search.value='';document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));apply();card.querySelector('details').open=true;requestAnimationFrame(()=>card.scrollIntoView({block:'start'}));}addEventListener('hashchange',deepLink);apply();deepLink();})();
+</script></body></html>
