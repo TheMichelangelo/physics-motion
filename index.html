@@ -1,10 +1,13 @@
 <!doctype html>
-<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Інтерактивна збірка задач з механічного руху: умови, покрокові розв’язки та правило руху річкою."><title>Механічний рух · Задачі та розв’язки</title>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Інтерактивні задачі з фізики: рух, густина, плавання тіл, механічна енергія та сили в природі. Умови й покрокові розв’язки."><title>Фізика · Задачі та розв’язки</title>
 <style>
-:root{--paper:#fcfbf7;--ink:#172a36;--muted:#5e6b72;--line:#d9e0dd;--accent:#17766f;--soft:#e8f2ee;--red:#b52727}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}button,input,a{ -webkit-tap-highlight-color:transparent}button,a,input,summary{outline-offset:5px}a{color:var(--accent)}button{cursor:pointer;font:inherit}.skip{position:absolute;top:-70px;background:white;padding:10px;z-index:20}.skip:focus{top:0}.top{max-width:1180px;margin:auto;padding:25px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;display:flex;gap:12px;align-items:center}.symbol{background:var(--accent);color:white;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font:italic 25px Georgia}.download{text-decoration:none;border:1px solid var(--line);padding:7px 15px;border-radius:8px;font-size:14px}.hero{max-width:1180px;padding:50px 32px 35px;margin:auto;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:end}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.15em;font-weight:750}h1{font:clamp(38px,6vw,64px)/1.1 Georgia,serif;margin:12px 0 17px;letter-spacing:-.035em}.hero p{color:var(--muted);max-width:560px;margin:0}.stat{border-left:1px solid var(--line);padding-left:30px;color:var(--muted);font-size:14px}.stat strong{display:block;font:48px Georgia;color:var(--accent)}.toolbar{position:sticky;top:0;background:rgba(252,251,247,.97);z-index:5;border-block:1px solid var(--line)}.tools{max-width:1180px;margin:auto;padding:15px 32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.tabs{display:flex;gap:5px}.tabs button{padding:8px 12px;border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;font-size:14px}.tabs button[aria-pressed=true]{background:var(--accent);color:white}.search{margin-left:auto;position:relative}.search input{width:245px;border:1px solid var(--line);border-radius:7px;background:white;padding:10px 12px;font:14px system-ui}.workspace{max-width:1180px;margin:30px auto 80px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:34px;padding:0 32px}.sidebar{position:sticky;top:105px;align-self:start;max-height:calc(100vh - 130px);overflow:auto;font-size:13px}.sidebar h2{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 12px}.sidebar a{display:block;text-decoration:none;color:var(--muted);padding:7px 10px;border-left:2px solid var(--line)}.sidebar a:hover{color:var(--accent);border-left-color:var(--accent);background:var(--soft)}.utility{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:20px;font-size:13px;color:var(--muted)}.utility button{border:0;background:transparent;color:var(--accent);padding:4px 0}.utility #count{margin-right:auto}.exercise{background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:24px;box-shadow:0 3px 12px #172a3603;overflow:hidden;scroll-margin-top:110px}.exercise-header{padding:24px 28px 8px}.topic-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:750}.exercise h2{font:700 24px/1.3 Georgia,serif;margin:7px 0 9px}.permalink{float:right;text-decoration:none;font-size:18px;color:#80968d}.condition{padding:0 28px 22px;font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:1.65}.solution{border-top:1px solid var(--line)}summary{cursor:pointer;padding:14px 28px;background:#f5f8f5;font-size:14px;font-weight:650;color:var(--accent)}summary:hover{background:var(--soft)}.table-scroll{overflow-x:auto;padding:20px}.table-scroll table{border-collapse:collapse;width:100%;font:17px/1.55 Georgia,'Times New Roman',serif}.table-scroll th,.table-scroll td{border:1px solid #76878a;padding:12px;vertical-align:top;text-align:left}.table-scroll th{background:#f4f6f4;font-weight:bold}.given{width:22%;min-width:110px}.reasoning{width:auto;min-width:320px}.reasoning h4{font:bold italic 17px/1.45 Georgia,serif;margin:16px 0 8px}.reasoning h4:first-child{margin-top:0}.paragraph-gap{height:8px}hr{border:0;border-top:1px solid #76878a;margin:12px 0}.rule{border:1px solid #ebc5bf;border-left:4px solid var(--red);border-radius:10px;margin:0 0 25px;background:#fff7f5;color:var(--red)}.rule summary{color:var(--red);background:transparent;font-size:15px}.rule-body{padding:5px 24px 24px;font:17px/1.65 Georgia,serif;overflow-x:auto}.rule-body .paragraph-gap{height:10px}mjx-container[display=true]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:5px 0}#empty{padding:40px;border:1px dashed var(--line);text-align:center;border-radius:10px}main{min-width:0}footer{max-width:1180px;margin:auto;padding:24px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}noscript{display:block;padding:20px;text-align:center}[hidden]{display:none!important}.math-status{font-size:12px;color:var(--muted);padding:0 28px}.math-status:empty{display:none}@media(max-width:1000px){.workspace{grid-template-columns:1fr}.sidebar{display:none}.tools{gap:9px}.search{margin-left:0;flex:1}.search input{width:100%}.stat{display:none}}@media(max-width:600px){.top{padding:16px}.hero{padding:32px 18px}.brand{letter-spacing:.04em;font-size:12px}.download{padding:6px 10px}.tools{padding:10px 14px}.tabs{width:100%}.tabs button{font-size:12px;padding:7px 9px}.search{width:100%}.workspace{padding:0 12px;margin-top:20px}.exercise-header{padding:20px 18px 6px}.exercise h2{font-size:23px}.condition{padding:0 18px 20px;font-size:17px}.table-scroll{padding:12px}.table-scroll table{font-size:16px}.table-scroll td{padding:9px}.reasoning{min-width:285px}footer{padding:20px 18px;flex-direction:column}}@media print{body{background:white;color:black}.top,.hero,.toolbar,.sidebar,.utility,footer,.permalink,summary{display:none}.workspace{display:block;margin:0;padding:0}.exercise{break-inside:avoid;border:0;box-shadow:none;border-radius:0}.exercise[hidden]{display:none}.condition{font-size:12pt}.table-scroll{padding:0;overflow:visible}.table-scroll table{font-size:10pt}.rule-body{font-size:11pt}.rule{break-inside:avoid}.solution:not([open])>*:not(summary){display:block}}
-</style>
+:root{--paper:#fcfbf7;--ink:#172a36;--muted:#5e6b72;--line:#d9e0dd;--accent:#17766f;--soft:#e8f2ee;--red:#b52727}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:var(--nav-height,220px)}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}button,input,a{ -webkit-tap-highlight-color:transparent}button,a,input,summary{outline-offset:5px}a{color:var(--accent)}button{cursor:pointer;font:inherit}.skip{position:absolute;top:-70px;background:white;padding:10px;z-index:20}.skip:focus{top:0}.top{max-width:1180px;margin:auto;padding:25px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;display:flex;gap:12px;align-items:center}.symbol{background:var(--accent);color:white;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font:italic 25px Georgia}.download{text-decoration:none;border:1px solid var(--line);padding:7px 15px;border-radius:8px;font-size:14px}.hero{max-width:1180px;padding:50px 32px 35px;margin:auto;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:end}.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.15em;font-weight:750}h1{font:clamp(38px,6vw,64px)/1.1 Georgia,serif;margin:12px 0 17px;letter-spacing:-.035em}.hero p{color:var(--muted);max-width:560px;margin:0}.stat{border-left:1px solid var(--line);padding-left:30px;color:var(--muted);font-size:14px}.stat strong{display:block;font:48px Georgia;color:var(--accent)}.toolbar{position:sticky;top:0;background:rgba(252,251,247,.97);z-index:5;border-block:1px solid var(--line)}.tools{max-width:1180px;margin:auto;padding:15px 32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.tabs{display:flex;gap:5px}.tabs button{padding:8px 12px;border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;font-size:14px}.tabs button[aria-pressed=true]{background:var(--accent);color:white}.search{margin-left:auto;position:relative}.search input{width:245px;border:1px solid var(--line);border-radius:7px;background:white;padding:10px 12px;font:14px system-ui}.workspace{max-width:1180px;margin:30px auto 80px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:34px;padding:0 32px}.sidebar{position:sticky;top:105px;align-self:start;max-height:calc(100vh - 130px);overflow:auto;font-size:13px}.sidebar h2{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 12px}.sidebar a{display:block;text-decoration:none;color:var(--muted);padding:7px 10px;border-left:2px solid var(--line)}.sidebar a:hover{color:var(--accent);border-left-color:var(--accent);background:var(--soft)}.utility{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:20px;font-size:13px;color:var(--muted)}.utility button{border:0;background:transparent;color:var(--accent);padding:4px 0}.utility #count{margin-right:auto}.exercise{background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:24px;box-shadow:0 3px 12px #172a3603;overflow:hidden;scroll-margin-top:var(--nav-height,220px)}.exercise-header{padding:24px 28px 8px}.topic-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:750}.exercise h2{font:700 24px/1.3 Georgia,serif;margin:7px 0 9px}.permalink{float:right;text-decoration:none;font-size:18px;color:#80968d}.condition{padding:0 28px 22px;font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:1.65}.solution{border-top:1px solid var(--line)}summary{cursor:pointer;padding:14px 28px;background:#f5f8f5;font-size:14px;font-weight:650;color:var(--accent)}summary:hover{background:var(--soft)}.table-scroll{overflow-x:auto;padding:20px}.table-scroll table{border-collapse:collapse;width:100%;font:17px/1.55 Georgia,'Times New Roman',serif}.table-scroll th,.table-scroll td{border:1px solid #76878a;padding:12px;vertical-align:top;text-align:left}.table-scroll th{background:#f4f6f4;font-weight:bold}.given{width:22%;min-width:110px}.reasoning{width:auto;min-width:320px}.reasoning h4{font:bold italic 17px/1.45 Georgia,serif;margin:16px 0 8px}.reasoning h4:first-child{margin-top:0}.paragraph-gap{height:8px}hr{border:0;border-top:1px solid #76878a;margin:12px 0}.rule{border:1px solid #ebc5bf;border-left:4px solid var(--red);border-radius:10px;margin:0 0 25px;background:#fff7f5;color:var(--red)}.rule summary{color:var(--red);background:transparent;font-size:15px}.rule-body{padding:5px 24px 24px;font:17px/1.65 Georgia,serif;overflow-x:auto}.rule-body .paragraph-gap{height:10px}mjx-container[display=true]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:5px 0}#empty{padding:40px;border:1px dashed var(--line);text-align:center;border-radius:10px}main{min-width:0}footer{max-width:1180px;margin:auto;padding:24px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px}noscript{display:block;padding:20px;text-align:center}[hidden]{display:none!important}.math-status{font-size:12px;color:var(--muted);padding:0 28px}.math-status:empty{display:none}@media(max-width:1000px){.workspace{grid-template-columns:1fr}.sidebar{display:none}.tools{gap:9px}.search{margin-left:0;flex:1}.search input{width:100%}.stat{display:none}}@media(max-width:600px){.top{padding:16px}.hero{padding:32px 18px}.brand{letter-spacing:.04em;font-size:12px}.download{padding:6px 10px}.tools{padding:10px 14px}.tabs{width:100%}.tabs button{font-size:12px;padding:7px 9px}.search{width:100%}.workspace{padding:0 12px;margin-top:20px}.exercise-header{padding:20px 18px 6px}.exercise h2{font-size:23px}.condition{padding:0 18px 20px;font-size:17px}.table-scroll{padding:12px}.table-scroll table{font-size:16px}.table-scroll td{padding:9px}.reasoning{min-width:285px}footer{padding:20px 18px;flex-direction:column}}@media print{body{background:white;color:black}.top,.hero,.toolbar,.sidebar,.utility,footer,.permalink,summary{display:none}.workspace{display:block;margin:0;padding:0}.exercise{break-inside:avoid;border:0;box-shadow:none;border-radius:0}.exercise[hidden]{display:none}.condition{font-size:12pt}.table-scroll{padding:0;overflow:visible}.table-scroll table{font-size:10pt}.rule-body{font-size:11pt}.rule{break-inside:avoid}.solution:not([open])>*:not(summary){display:block}}
+.tabs{flex-wrap:wrap}.downloads{max-width:1180px;margin:24px auto 0;padding:0 32px;display:flex;gap:10px;flex-wrap:wrap}.collection-note{font-size:14px;color:var(--muted);margin-bottom:24px}@media(max-width:600px){.downloads{padding:0 14px}}@media print{.downloads,.collection-note{display:none}}</style>
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],packages:{'[+]':['ams']}},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{pageReady:()=>MathJax.startup.defaultPageReady().then(()=>{document.getElementById('math-status').textContent='';})}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" onerror="document.getElementById('math-status').textContent='Не вдалося завантажити формули. Перевірте інтернет або відкрийте PDF.'"></script>
-</head><body><a class="skip" href="#main">Перейти до задач</a><header class="top"><div class="brand"><span class="symbol" aria-hidden="true">s</span>Фізика · Практикум</div><a class="download" href="exercises.pdf">Завантажити PDF ↗</a></header><section class="hero"><div><span class="eyebrow">Досліджуємо рух</span><h1>Механічний рух</h1><p>Спробуй розв’язати самостійно, а потім відкрий пояснення. Кожна формула — крок до розуміння.</p></div><div class="stat"><strong>16</strong>задач із розв’язками</div></section><nav class="toolbar" aria-label="Фільтри задач"><div class="tools"><div class="tabs"><button type="button" data-filter="all" aria-pressed="true">Усі задачі</button><button type="button" data-filter="straight" aria-pressed="false">Прямолінійний рух</button><button type="button" data-filter="river" aria-pressed="false">За / проти течії</button></div><label class="search"><span class="sr-only" hidden>Пошук задач</span><input id="search" aria-label="Пошук за номером або словом" placeholder="Номер задачі або слово…" type="search"></label></div></nav><div class="workspace"><aside class="sidebar"><h2>Зміст збірки</h2><nav id="contents" aria-label="Зміст"></nav></aside><main id="main"><div class="utility"><span id="count" role="status" aria-live="polite"></span><button id="expand" type="button">Відкрити всі</button><button id="collapse" type="button">Згорнути всі</button><button id="print" type="button">Друкувати</button></div><p id="math-status" class="math-status" role="status">Завантаження формул…</p><details class="rule" id="river-rule"><summary>Правило: рух за течією та проти течії</summary><div class="rule-body"><div class="paragraph-gap"></div>\(v_{\text{ч}}\) — власна швидкість човна відносно води; \(v_{\text{р}}\) — швидкість течії річки; \(v_{\text{за}}\) і \(v_{\text{проти}}\) — швидкості човна відносно берега. Для руху проти течії потрібно \(v_{\text{ч}}&gt;v_{\text{р}}\).
+</head><body><a class="skip" href="#main">Перейти до задач</a><header class="top"><div class="brand"><span class="symbol" aria-hidden="true">s</span>Фізика · Практикум</div><a class="download" href="exercises.pdf">Рух · PDF ↗</a></header><section class="hero"><div><span class="eyebrow">Досліджуємо фізику</span><h1>Задачі з фізики</h1><p>Спробуй розв’язати самостійно, а потім відкрий пояснення. Кожна формула — крок до розуміння.</p></div><div class="stat"><strong>67</strong>задач із розв’язками</div></section><nav class="toolbar" aria-label="Фільтри задач"><div class="tools"><div class="tabs"><button type="button" data-filter="all" aria-pressed="true">Усі задачі</button><button type="button" data-filter="straight" aria-pressed="false">Прямолінійний рух</button><button type="button" data-filter="river" aria-pressed="false">За / проти течії</button><button type="button" data-filter="density" aria-pressed="false">Густина</button><button type="button" data-filter="floating" aria-pressed="false">Плавання тіл</button><button type="button" data-filter="energy" aria-pressed="false">Механічна енергія</button><button type="button" data-filter="forces" aria-pressed="false">Сили в природі</button></div><label class="search"><span class="sr-only" hidden>Пошук задач</span><input id="search" aria-label="Пошук за номером або словом" placeholder="Номер задачі або слово…" type="search"></label></div></nav><section class="downloads" aria-label="Документи за темами"><a class="download" href="documents/density.pdf">Густина · PDF ↗</a>
+<a class="download" href="documents/floating.pdf">Тиск рідин. Плавання тіл · PDF ↗</a>
+<a class="download" href="documents/energy.pdf">Механічна енергія · PDF ↗</a>
+<a class="download" href="documents/forces.pdf">Сили в природі · PDF ↗</a></section><div class="workspace"><aside class="sidebar"><h2>Зміст збірки</h2><nav id="contents" aria-label="Зміст"></nav></aside><main id="main"><div class="utility"><span id="count" role="status" aria-live="polite"></span><button id="expand" type="button">Відкрити всі</button><button id="collapse" type="button">Згорнути всі</button><button id="print" type="button">Друкувати</button></div><p id="math-status" class="math-status" role="status">Завантаження формул…</p><p class="collection-note">У нових розділах прийнято \(g=10\,\text{Н/кг}\). Використані табличні густини вказано в «Дано». Однакові задачі з різних сторінок мають обидва номери. Для задачі 4.98 без рисунка наведено два можливі варіанти.</p><details class="rule" id="river-rule"><summary>Правило: рух за течією та проти течії</summary><div class="rule-body"><div class="paragraph-gap"></div>\(v_{\text{ч}}\) — власна швидкість човна відносно води; \(v_{\text{р}}\) — швидкість течії річки; \(v_{\text{за}}\) і \(v_{\text{проти}}\) — швидкості човна відносно берега. Для руху проти течії потрібно \(v_{\text{ч}}&gt;v_{\text{р}}\).
 \[
 \begin{cases}
 v_{\text{ч}}+v_{\text{р}}=v_{\text{за}},\\
@@ -414,7 +417,630 @@ v_{\text{ч}}-v_{\text{р}}=v_{\text{проти}}.
 Дробова частина години:
 \[0{,}2\cdot60=12\,\text{хв}.\]
 <strong>Відповідь:</strong> \(3\,\text{год}\,12\,\text{хв}\) на відстань \(AB\).
-<br> Якщо розглядати весь шлях туди й назад (\(2l\)), час в озері дорівнює \(6{,}4\,\text{год}=6\,\text{год}\,24\,\text{хв}\).</td></tr></tbody></table></div></details></article></div><p id="empty" hidden>Задач не знайдено. Змініть запит або оберіть іншу тему.</p></main></div><noscript>Для пошуку та фільтрів увімкніть JavaScript. Умови й розв’язки доступні нижче.</noscript><footer><span>Механічний рух · Збірка для навчання</span><a href="exercises.tex" download>Вихідний LaTeX</a></footer>
+<br> Якщо розглядати весь шлях туди й назад (\(2l\)), час в озері дорівнює \(6{,}4\,\text{год}=6\,\text{год}\,24\,\text{хв}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-density-2-31" data-topic="density"><header class="exercise-header"><span class="topic-label">Густина</span><a class="permalink" href="#exercise-density-2-31" aria-label="Посилання на задачу">#</a><h2>Задача 2.31. Мідний і золотий циліндри</h2></header><div class="condition">На столі стоять два циліндри однакового діаметра — мідний та золотий. Мідний циліндр у 3 рази вищий, а його маса на 20 г більша, ніж маса золотого. Чому дорівнює маса золотого циліндра?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(S_{\text{м}}=S_{\text{з}}\)<br>
+\(h_{\text{м}}=3h_{\text{з}}\)<br>
+\(m_{\text{м}}-m_{\text{з}}=20\,\text{г}\)<br>
+\(\rho_{\text{м}}=8{,}9\,\text{г/см}^3\)<br>
+\(\rho_{\text{з}}=19{,}3\,\text{г/см}^3\)<br><hr><br> \(m_{\text{з}}-?\)</td><td class="reasoning"><h4>1. Пов’яжемо об’єми циліндрів.</h4>
+Об’єм циліндра \(V=Sh\). Площі основ рівні, тому \(V_{\text{м}}=3V_{\text{з}}\).
+<h4>2. Виразимо маси через об’єм золотого циліндра.</h4>
+За формулою \(m=\rho V\) маємо
+\[m_{\text{м}}=3\rho_{\text{м}}V_{\text{з}},\qquad m_{\text{з}}=\rho_{\text{з}}V_{\text{з}}.\]
+Віднімемо другу масу від першої:
+\[(3\rho_{\text{м}}-\rho_{\text{з}})V_{\text{з}}=\Delta m.\]
+Звідси \(V_{\text{з}}=\Delta m/(3\rho_{\text{м}}-\rho_{\text{з}})\), а
+\[m_{\text{з}}=\frac{\rho_{\text{з}}\Delta m}{3\rho_{\text{м}}-\rho_{\text{з}}}.\]
+<h4>3. Обчислимо в грамах і сантиметрах кубічних.</h4>
+\[m_{\text{з}}=\frac{19{,}3\cdot20}{3\cdot8{,}9-19{,}3}\approx52{,}2\,\text{г}.\]<br><strong>Відповідь:</strong> Маса золотого циліндра приблизно \(52{,}2\,\text{г}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-density-2-32" data-topic="density"><header class="exercise-header"><span class="topic-label">Густина</span><a class="permalink" href="#exercise-density-2-32" aria-label="Посилання на задачу">#</a><h2>Задача 2.32. Об’єми колод</h2></header><div class="condition">Маса дубової колоди в 1,5 раза більша за масу соснової колоди, а об’єм дубової колоди на 2 дм³ менший від об’єму соснової колоди. Чому дорівнює об’єм соснової колоди?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{д}}=1{,}5m_{\text{с}}\)<br>
+\(V_{\text{с}}-V_{\text{д}}=2\,\text{дм}^3\)<br>
+\(\rho_{\text{д}}=0{,}7\,\text{кг/дм}^3\)<br>
+\(\rho_{\text{с}}=0{,}4\,\text{кг/дм}^3\)<br><hr><br> \(V_{\text{с}}-?\)</td><td class="reasoning"><h4>1. Позначимо об’єм соснової колоди через \(V\).</h4>
+Тоді об’єм дубової колоди дорівнює \(V-2\,\text{дм}^3\).
+<h4>2. Запишемо умову про маси за допомогою \(m=\rho V\).</h4>
+\[\rho_{\text{д}}(V-\Delta V)=1{,}5\rho_{\text{с}}V.\]
+Розкриємо дужки та перенесемо доданки з \(V\) вліво:
+\[(\rho_{\text{д}}-1{,}5\rho_{\text{с}})V=\rho_{\text{д}}\Delta V.\]
+Звідси
+\[V=\frac{\rho_{\text{д}}\Delta V}{\rho_{\text{д}}-1{,}5\rho_{\text{с}}}.\]
+<h4>3. Обчислимо у зручних узгоджених одиницях.</h4>
+\[V=\frac{0{,}7\cdot2}{0{,}7-1{,}5\cdot0{,}4}=14\,\text{дм}^3.\]
+Перевірка: дубова колода має об’єм \(12\,\text{дм}^3\) і масу \(8{,}4\,\text{кг}\); соснова — \(5{,}6\,\text{кг}\). Відношення мас дорівнює \(1{,}5\).<br><strong>Відповідь:</strong> \(V_{\text{с}}=14\,\text{дм}^3\) за прийнятих табличних густин.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-density-2-33" data-topic="density"><header class="exercise-header"><span class="topic-label">Густина</span><a class="permalink" href="#exercise-density-2-33" aria-label="Посилання на задачу">#</a><h2>Задача 2.33. Банка з водою та спиртом</h2></header><div class="condition">Маса повної банки з водою дорівнює 700 г, а маса цієї банки, наповненої спиртом, дорівнює 600 г. Чому дорівнюють маса порожньої банки та її місткість?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=700\,\text{г}\)<br>
+\(m_2=600\,\text{г}\)<br>
+\(\rho_{\text{в}}=1\,\text{г/см}^3\)<br>
+\(\rho_{\text{с}}=0{,}8\,\text{г/см}^3\)<br><hr><br> \(m_0-?\)<br>
+\(V-?\)</td><td class="reasoning"><h4>1. Запишемо масу банки з кожною рідиною.</h4>
+Нехай \(m_0\) — маса порожньої банки, \(V\) — її місткість. Тоді
+\[m_0+\rho_{\text{в}}V=m_1,\qquad m_0+\rho_{\text{с}}V=m_2.\]
+<h4>2. Віднімемо рівняння, щоб виключити масу банки.</h4>
+\[(\rho_{\text{в}}-\rho_{\text{с}})V=m_1-m_2,\]
+\[V=\frac{m_1-m_2}{\rho_{\text{в}}-\rho_{\text{с}}}=\frac{700-600}{1-0{,}8}=500\,\text{см}^3.\]
+<h4>3. Віднімемо масу води від загальної маси.</h4>
+\[m_0=m_1-\rho_{\text{в}}V=700-1\cdot500=200\,\text{г}.\]<br><strong>Відповідь:</strong> Маса банки \(200\,\text{г}\), місткість \(500\,\text{см}^3\) (пів літра).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-density-2-34" data-topic="density"><header class="exercise-header"><span class="topic-label">Густина</span><a class="permalink" href="#exercise-density-2-34" aria-label="Посилання на задачу">#</a><h2>Задача 2.34. Відношення мас у сплаві</h2></header><div class="condition">Для виготовлення сплаву взяли мідь та цинк. Чому дорівнює відношення мас цинку та міді, якщо густина сплаву становить 8,4 г/см³?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(\rho=8{,}4\,\text{г/см}^3\)<br>
+\(\rho_{\text{м}}=8{,}9\,\text{г/см}^3\)<br>
+\(\rho_{\text{ц}}=7{,}1\,\text{г/см}^3\)<br><hr><br> \(m_{\text{ц}}/m_{\text{м}}-?\)</td><td class="reasoning"><h4>1. Запишемо масу й об’єм сплаву.</h4>
+У шкільній моделі об’єми складників додаються:
+\[m=m_{\text{м}}+m_{\text{ц}},\qquad V=\frac{m_{\text{м}}}{\rho_{\text{м}}}+\frac{m_{\text{ц}}}{\rho_{\text{ц}}}.\]
+<h4>2. Введемо шукане відношення \(x=m_{\text{ц}}/m_{\text{м}}\).</h4>
+Тоді \(m_{\text{ц}}=xm_{\text{м}}\). Підставимо це в \(\rho=m/V\) та скоротимо на \(m_{\text{м}}\):
+\[\rho=\frac{1+x}{1/\rho_{\text{м}}+x/\rho_{\text{ц}}}.\]
+Помножимо на знаменник і зберемо доданки з \(x\):
+\[x\left(\frac{\rho}{\rho_{\text{ц}}}-1\right)=1-\frac{\rho}{\rho_{\text{м}}}.\]
+Звідси
+\[x=\frac{\rho_{\text{ц}}(\rho_{\text{м}}-\rho)}{\rho_{\text{м}}(\rho-\rho_{\text{ц}})}.\]
+<h4>3. Обчислимо відношення.</h4>
+\[x=\frac{7{,}1(8{,}9-8{,}4)}{8{,}9(8{,}4-7{,}1)}\approx0{,}31.\]<br><strong>Відповідь:</strong> \(m_{\text{ц}}/m_{\text{м}}\approx0{,}31\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-density-2-35" data-topic="density"><header class="exercise-header"><span class="topic-label">Густина</span><a class="permalink" href="#exercise-density-2-35" aria-label="Посилання на задачу">#</a><h2>Задача 2.35. Склад сплаву масою 250 г</h2></header><div class="condition">Скільки (за масою) міді та цинку треба взяти для виготовлення 250 г сплаву з густиною 8,5 г/см³?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=250\,\text{г}\)<br>
+\(\rho=8{,}5\,\text{г/см}^3\)<br>
+\(\rho_{\text{м}}=8{,}9\,\text{г/см}^3\)<br>
+\(\rho_{\text{ц}}=7{,}1\,\text{г/см}^3\)<br><hr><br> \(m_{\text{м}}-?\)<br>
+\(m_{\text{ц}}-?\)</td><td class="reasoning"><h4>1. Виразимо масу міді через масу цинку.</h4>
+Оскільки маси додаються, \(m_{\text{м}}=m-m_{\text{ц}}\). Об’єми вважаємо такими, що додаються.
+<h4>2. Прирівняємо об’єм сплаву до суми об’ємів металів.</h4>
+\[\frac{m}{\rho}=\frac{m-m_{\text{ц}}}{\rho_{\text{м}}}+\frac{m_{\text{ц}}}{\rho_{\text{ц}}}.\]
+Перенесемо \(m/\rho_{\text{м}}\) вліво:
+\[m\left(\frac1\rho-\frac1{\rho_{\text{м}}}\right)=m_{\text{ц}}\left(\frac1{\rho_{\text{ц}}}-\frac1{\rho_{\text{м}}}\right).\]
+Тому
+\[m_{\text{ц}}=\frac{m\rho_{\text{ц}}(\rho_{\text{м}}-\rho)}{\rho(\rho_{\text{м}}-\rho_{\text{ц}})}.\]
+<h4>3. Обчислимо маси.</h4>
+\[m_{\text{ц}}=\frac{250\cdot7{,}1\cdot(8{,}9-8{,}5)}{8{,}5(8{,}9-7{,}1)}\approx46{,}4\,\text{г},\]
+\[m_{\text{м}}=250-46{,}4=203{,}6\,\text{г}.\]<br><strong>Відповідь:</strong> Приблизно \(203{,}6\,\text{г}\) міді та \(46{,}4\,\text{г}\) цинку.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-31" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-31" aria-label="Посилання на задачу">#</a><h2>Задача 3.31. Вода й олива у сполучених посудинах</h2></header><div class="condition">В одне з колін U-подібної трубки над водою налили шар оливи заввишки 10 см. На скільки рівень оливи вищий за рівень води в другому коліні? Рідини не змішуються.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(h_{\text{о}}=10\,\text{см}\)<br>
+\(\rho_{\text{о}}=900\,\text{кг/м}^3\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br><hr><br> \(\Delta h-?\)</td><td class="reasoning"><h4>1. Порівняємо тиски на рівні межі оливи й води.</h4>
+З обох боків на цьому горизонтальному рівні міститься сполучена вода, тому тиски однакові. Атмосферний тиск над вільними поверхнями теж однаковий:
+\[\rho_{\text{о}}gh_{\text{о}}=\rho_{\text{в}}gh_{\text{в}}.\]
+Тут \(h_{\text{в}}\) — відстань від межі рідин до вільної поверхні води в іншому коліні.
+<h4>2. Виразимо висоту водяного стовпа.</h4>
+\[h_{\text{в}}=\frac{\rho_{\text{о}}}{\rho_{\text{в}}}h_{\text{о}}=\frac{900}{1000}\cdot10=9\,\text{см}.\]
+<h4>3. Знайдемо різницю рівнів.</h4>
+Обидві висоти відлічені від одного горизонтального рівня, тому
+\[\Delta h=h_{\text{о}}-h_{\text{в}}=10-9=1\,\text{см}.\]<br><strong>Відповідь:</strong> Рівень оливи вищий на \(1\,\text{см}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-32" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-32" aria-label="Посилання на задачу">#</a><h2>Задача 3.32. Перетікання води між посудинами</h2></header><div class="condition">Дві циліндричні посудини з площами поперечного перерізу 20 см² та 50 см² з’єднані біля дна тонкою трубкою з краном. Спочатку кран закритий; рівень води в першій посудині становить 50 см. Після відкриття крана він становить 40 см. Яким був початковий рівень води в другій посудині? Об’ємом трубки знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(S_1=20\,\text{см}^2\)<br>
+\(S_2=50\,\text{см}^2\)<br>
+\(h_1=50\,\text{см}\)<br>
+\(h=40\,\text{см}\)<br><hr><br> \(h_2-?\)</td><td class="reasoning"><h4>1. Визначимо кінцеві рівні.</h4>
+У сполучених посудинах з тією самою рідиною рівні після встановлення рівноваги однакові: в обох посудинах \(h=40\,\text{см}\).
+<h4>2. Запишемо збереження об’єму води.</h4>
+Спочатку води було \(S_1h_1+S_2h_2\), після перетікання — \((S_1+S_2)h\). Тому
+\[S_1h_1+S_2h_2=(S_1+S_2)h.\]
+Віднімемо \(S_1h_1\) і поділимо на \(S_2\):
+\[h_2=\frac{(S_1+S_2)h-S_1h_1}{S_2}.\]
+<h4>3. Обчислимо в сантиметрах.</h4>
+\[h_2=\frac{(20+50)\cdot40-20\cdot50}{50}=36\,\text{см}.\]<br><strong>Відповідь:</strong> Початковий рівень води в другій посудині \(36\,\text{см}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-33" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-33" aria-label="Посилання на задачу">#</a><h2>Задача 3.33. Визначення рідини в U-подібній трубці</h2></header><div class="condition">В U-подібну трубку з площею поперечного перерізу 5 см² налито рідину, яка не змішується з водою. В одне коліно долили 80 мл води. Верхній рівень у цьому коліні став на 4 см нижчим від рівня в іншому коліні. Яка рідина була налита спочатку?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(S=5\,\text{см}^2\)<br>
+\(V_{\text{в}}=80\,\text{мл}\)<br>
+\(\Delta h=4\,\text{см}\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br><hr><br> \(\rho-?\)</td><td class="reasoning"><h4>1. Знайдемо висоту стовпа води.</h4>
+Один мілілітр дорівнює одному сантиметру кубічному, тому \(V_{\text{в}}=80\,\text{см}^3\). Із \(V=Sh\):
+\[h_{\text{в}}=V_{\text{в}}/S=80/5=16\,\text{см}.\]
+<h4>2. Визначимо висоту стовпа невідомої рідини над рівнем межі.</h4>
+Її вільна поверхня на \(4\,\text{см}\) вища за поверхню води:
+\[h=h_{\text{в}}+\Delta h=16+4=20\,\text{см}.\]
+<h4>3. Прирівняємо гідростатичні тиски.</h4>
+\[\rho gh=\rho_{\text{в}}gh_{\text{в}},\qquad \rho=\rho_{\text{в}}\frac{h_{\text{в}}}{h}.\]
+\[\rho=1000\cdot\frac{16}{20}=800\,\text{кг/м}^3.\]
+За шкільною таблицею таку густину має гас. Самої густини недостатньо, щоб однозначно розрізнити всі можливі речовини.<br><strong>Відповідь:</strong> Густина \(800\,\text{кг/м}^3\); за табличними даними — гас.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-35" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-35" aria-label="Посилання на задачу">#</a><h2>Задача 3.35. Тиск води на пробку</h2></header><div class="condition">Запаяний циліндричний бак і впаяна в нього вертикальна трубка заввишки 1,5 м заповнені водою. Зверху трубку закриває поршень площею 5 см², на якому лежить вантаж масою 2 кг. У верхній частині бака є отвір, щільно закритий пробкою площею 20 см². З якою силою вода тисне на пробку? Масою поршня і тертям знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(h=1{,}5\,\text{м}\)<br>
+\(S_{\text{п}}=5\,\text{см}^2\)<br>
+\(S=20\,\text{см}^2\)<br>
+\(m=2\,\text{кг}\)<br>
+\(\rho=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F-?\)</td><td class="given">\(1\,\text{см}^2=0{,}0001\,\text{м}^2\)<br>
+\(S_{\text{п}}=0{,}0005\,\text{м}^2\)<br>
+\(S=0{,}002\,\text{м}^2\)</td><td class="reasoning"><h4>1. Знайдемо додатковий тиск під поршнем.</h4>
+Вантаж створює надлишковий над атмосферним тиск
+\[p_{\text{п}}=mg/S_{\text{п}}.\]
+<h4>2. Додамо гідростатичний тиск стовпа води.</h4>
+Пробка нижче поршня на \(h\), тому надлишковий тиск біля неї
+\[p=\frac{mg}{S_{\text{п}}}+\rho gh.\]
+\[p=\frac{2\cdot10}{0{,}0005}+1000\cdot10\cdot1{,}5=55000\,\text{Па}.\]
+<h4>3. Помножимо тиск на площу пробки.</h4>
+\[F=pS=55000\cdot0{,}002=110\,\text{Н}.\]
+Це сила, що виштовхує пробку з урахуванням зовнішнього атмосферного тиску. Абсолютна сила води зсередини дорівнює \((p_{\text{атм}}+55000)S\); зовнішня сила атмосфери \(p_{\text{атм}}S\) компенсує її атмосферну частину.<br><strong>Відповідь:</strong> Надлишкова сила на пробку \(110\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-36" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-36" aria-label="Посилання на задачу">#</a><h2>Задача 3.36. Сила тиску на стінку акваріума</h2></header><div class="condition">З якою силою вода тисне на вертикальну стінку акваріума заввишки 60 см і завширшки 80 см, якщо акваріум наповнений доверху?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(h=60\,\text{см}\)<br>
+\(b=80\,\text{см}\)<br>
+\(\rho=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F-?\)</td><td class="given">\(h=60/100=0{,}6\,\text{м}\)<br>
+\(b=80/100=0{,}8\,\text{м}\)</td><td class="reasoning"><h4>1. Урахуємо зміну тиску з глибиною.</h4>
+Біля поверхні надлишковий тиск нульовий, біля дна — \(p_{\text{д}}=\rho gh\). Тиск зростає рівномірно з глибиною. Для прямокутної стінки його середнє значення дорівнює половині найбільшого:
+\[p_{\text{сер}}=\frac{0+p_{\text{д}}}{2}=\frac{\rho gh}{2}.\]
+<h4>2. Помножимо середній тиск на площу стінки.</h4>
+Площа \(S=bh\), тому
+\[F=p_{\text{сер}}S=\frac{\rho gh}{2}bh=\frac{\rho gbh^2}{2}.\]
+<h4>3. Підставимо значення в СІ.</h4>
+\[F=\frac{1000\cdot10\cdot0{,}8\cdot0{,}6^2}{2}=1440\,\text{Н}.\]
+Атмосферний тиск з обох боків стінки взаємно компенсується.<br><strong>Відповідь:</strong> \(F=1440\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-37" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-37" aria-label="Посилання на задачу">#</a><h2>Задача 3.37. Об’єм прямокутної посудини</h2></header><div class="condition">Посудину у формі прямокутного паралелепіпеда заповнили доверху водою і запаяли. Залежно від того, на якій грані стоїть посудина, вода чинить на нижню грань тиск 1 кПа, 2 кПа або 4 кПа. Чому дорівнює об’єм посудини?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(p_1=1\,\text{кПа}\)<br>
+\(p_2=2\,\text{кПа}\)<br>
+\(p_3=4\,\text{кПа}\)<br>
+\(\rho=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(V-?\)</td><td class="given">\(p_1=1000\,\text{Па}\)<br>
+\(p_2=2000\,\text{Па}\)<br>
+\(p_3=4000\,\text{Па}\)</td><td class="reasoning"><h4>1. Уточнимо значення тисків у шкільній моделі.</h4>
+Наведені тиски розуміємо як гідростатичні прирости тиску між верхньою та нижньою гранями. Для абсолютного тиску в запаяній посудині знадобився б ще тиск біля верхньої грані.
+<h4>2. Знайдемо три висоти посудини.</h4>
+Після поворотів висотами стають три її ребра. Із \(p=\rho gh\):
+\[a=\frac{p_1}{\rho g},\quad b=\frac{p_2}{\rho g},\quad c=\frac{p_3}{\rho g}.\]
+\[a=\frac{1000}{1000\cdot10}=0{,}1\,\text{м},\quad b=0{,}2\,\text{м},\quad c=0{,}4\,\text{м}.\]
+<h4>3. Перемножимо довжини ребер.</h4>
+\[V=abc=0{,}1\cdot0{,}2\cdot0{,}4=0{,}008\,\text{м}^3.\]<br><strong>Відповідь:</strong> \(V=0{,}008\,\text{м}^3\) (8 л) у зазначеній моделі тиску.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-38" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-38" aria-label="Посилання на задачу">#</a><h2>Задача 3.38. Рівність сил тиску на дно і стінку</h2></header><div class="condition">Дно акваріума — квадрат зі стороною 40 см. Якою має бути висота води, щоб сила її тиску на одну бічну стінку дорівнювала силі тиску на дно?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(a=40\,\text{см}\)<br>
+\(F_{\text{ст}}=F_{\text{д}}\)<br><hr><br> \(h-?\)</td><td class="reasoning"><h4>1. Запишемо силу тиску на дно.</h4>
+На горизонтальному дні тиск скрізь однаковий: \(p=\rho gh\). Площа дна \(a^2\), отже
+\[F_{\text{д}}=\rho gha^2.\]
+<h4>2. Запишемо силу тиску на одну стінку.</h4>
+Площа змоченої частини стінки \(ah\), середній надлишковий тиск \(\rho gh/2\):
+\[F_{\text{ст}}=\frac{\rho gh}{2}ah=\frac{\rho gah^2}{2}.\]
+<h4>3. Прирівняємо сили і скоротимо спільні множники.</h4>
+Для ненульової висоти \(h\):
+\[\frac{\rho gah^2}{2}=\rho gha^2,\qquad \frac h2=a,\qquad h=2a.\]
+\[h=2\cdot40=80\,\text{см}.\]<br><strong>Відповідь:</strong> Висота води має бути \(80\,\text{см}\); акваріум повинен мати достатню висоту.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-76" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-76" aria-label="Посилання на задачу">#</a><h2>Задача 3.76. Показ динамометра у воді</h2></header><div class="condition">Підвішена до динамометра свинцева куля масою 1 кг повністю занурена у воду. Якими є покази динамометра?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=1\,\text{кг}\)<br>
+\(\rho_{\text{св}}=11300\,\text{кг/м}^3\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F_{\text{дин}}-?\)</td><td class="reasoning"><h4>1. Запишемо рівновагу кулі.</h4>
+Униз діє сила тяжіння \(mg\), угору — натяг динамометра та сила Архімеда:
+\[F_{\text{дин}}+F_{\text{А}}=mg,\qquad F_{\text{дин}}=mg-F_{\text{А}}.\]
+<h4>2. Виразимо силу Архімеда через масу кулі.</h4>
+Куля суцільна, тому \(V=m/\rho_{\text{св}}\). За повного занурення
+\[F_{\text{А}}=\rho_{\text{в}}gV=\frac{\rho_{\text{в}}gm}{\rho_{\text{св}}}.\]
+<h4>3. Обчислимо показ динамометра.</h4>
+\[F_{\text{дин}}=mg\left(1-\frac{\rho_{\text{в}}}{\rho_{\text{св}}}\right),\]
+\[F_{\text{дин}}=1\cdot10\left(1-\frac{1000}{11300}\right)\approx9{,}12\,\text{Н}.\]<br><strong>Відповідь:</strong> Динамометр покаже приблизно \(9{,}12\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-77" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-77" aria-label="Посилання на задачу">#</a><h2>Задача 3.77. Куля наполовину у воді</h2></header><div class="condition">Мармурова куля масою 1 кг лежить у посудині, наполовину занурена у воду. З якою силою куля тисне на дно?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=1\,\text{кг}\)<br>
+\(V_{\text{зан}}=V/2\)<br>
+\(\rho_{\text{м}}=2700\,\text{кг/м}^3\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F-?\)</td><td class="reasoning"><h4>1. Урахуємо підтримувальну дію води.</h4>
+У стані спокою \(N+F_{\text{А}}=mg\), тому реакція дна \(N=mg-F_{\text{А}}\). Сила тиску кулі на дно має такий самий модуль \(F=N\). Вважаємо, що вода оточує занурену частину кулі.
+<h4>2. Знайдемо занурений об’єм.</h4>
+\[V=\frac m{\rho_{\text{м}}},\qquad V_{\text{зан}}=\frac m{2\rho_{\text{м}}}.\]
+<h4>3. Підставимо силу Архімеда.</h4>
+\[F=mg-\rho_{\text{в}}gV_{\text{зан}}=mg\left(1-\frac{\rho_{\text{в}}}{2\rho_{\text{м}}}\right).\]
+\[F=10\left(1-\frac{1000}{5400}\right)\approx8{,}15\,\text{Н}.\]<br><strong>Відповідь:</strong> Куля тисне на дно із силою приблизно \(8{,}15\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-78" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-78" aria-label="Посилання на задачу">#</a><h2>Задача 3.78. Порожнина в мідному бруску</h2></header><div class="condition">Мідний брусок із порожниною має масу 2,3 кг. Після його повного занурення у воду покази динамометра зменшилися на 10 Н. Чому дорівнює об’єм порожнини?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=2{,}3\,\text{кг}\)<br>
+\(\Delta F=10\,\text{Н}\)<br>
+\(\rho_{\text{м}}=8900\,\text{кг/м}^3\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(V_{\text{пор}}-?\)</td><td class="reasoning"><h4>1. За зменшенням показів знайдемо зовнішній об’єм.</h4>
+Зменшення натягу дорівнює силі Архімеда. У шкільній моделі нехтуємо виштовхувальною силою повітря та масою повітря в замкненій порожнині:
+\[\Delta F=\rho_{\text{в}}gV,\qquad V=\frac{\Delta F}{\rho_{\text{в}}g}.\]
+\[V=\frac{10}{1000\cdot10}=0{,}001\,\text{м}^3.\]
+<h4>2. Знайдемо об’єм самої міді.</h4>
+\[V_{\text{м}}=\frac m{\rho_{\text{м}}}=\frac{2{,}3}{8900}\approx0{,}00025843\,\text{м}^3.\]
+<h4>3. Віднімемо об’єм металу від зовнішнього об’єму.</h4>
+\[V_{\text{пор}}=V-V_{\text{м}}\approx0{,}00074157\,\text{м}^3.\]
+Оскільки \(1\,\text{м}^3=1000000\,\text{см}^3\), це приблизно \(742\,\text{см}^3\).<br><strong>Відповідь:</strong> \(V_{\text{пор}}\approx0{,}000742\,\text{м}^3\) (приблизно \(742\,\text{см}^3\)).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-79" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-79" aria-label="Посилання на задачу">#</a><h2>Задача 3.79. Густина кулі за силою тиску</h2></header><div class="condition">Повністю занурена у воду суцільна куля тисне на дно посудини із силою, що дорівнює чверті сили тяжіння кулі. Яка густина речовини кулі?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(N=mg/4\)<br>
+\(V_{\text{зан}}=V\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br><hr><br> \(\rho-?\)</td><td class="reasoning"><h4>1. Запишемо рівновагу сил.</h4>
+\[N+F_{\text{А}}=mg.\]
+Підставивши \(N=mg/4\), дістанемо
+\[F_{\text{А}}=mg-\frac{mg}{4}=\frac34mg.\]
+<h4>2. Виразимо обидві сили через об’єм.</h4>
+За повного занурення \(F_{\text{А}}=\rho_{\text{в}}gV\), а \(mg=\rho gV\). Тому
+\[\rho_{\text{в}}gV=\frac34\rho gV.\]
+<h4>3. Скоротимо \(gV\) та виразимо густину.</h4>
+\[\rho=\frac43\rho_{\text{в}}=\frac43\cdot1000\approx1333\,\text{кг/м}^3.\]<br><strong>Відповідь:</strong> \(\rho\approx1333\,\text{кг/м}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-90" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-90" aria-label="Посилання на задачу">#</a><h2>Задача 3.90. Танення крижини</h2></header><div class="condition">У посудині з водою плаває крижина. а) Чи зміниться рівень води, коли крижина розтане? б) Як зміниться відповідь, якщо в крижину вмерзла соснова кулька? Сталева кулька?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(F_{\text{А}}=mg\)<br>
+\(\rho_{\text{сосни}}&lt;\rho_{\text{в}}\)<br>
+\(\rho_{\text{сталі}}&gt;\rho_{\text{в}}\)<br><hr><br> \(\Delta h-?\)</td><td class="reasoning"><h4>1. Порівняємо витіснену воду й воду після танення.</h4>
+Плавуча крижина масою \(m_{\text{л}}\) витісняє воду об’ємом \(m_{\text{л}}/\rho_{\text{в}}\). Після танення утворюється рівно такий об’єм води. Отже, без домішок рівень не зміниться.
+<h4>2. Розглянемо соснову кульку.</h4>
+Після танення вона продовжує плавати й витісняє воду об’ємом \(m_{\text{к}}/\rho_{\text{в}}\), як і її внесок у витіснення до танення. Рівень також не зміниться.
+<h4>3. Розглянемо сталеву кульку.</h4>
+Спочатку крижина разом із кулькою плаває. Внесок кульки у витіснений об’єм дорівнює \(m_{\text{к}}/\rho_{\text{в}}\). Після танення кулька тоне й витісняє лише власний об’єм \(m_{\text{к}}/\rho_{\text{ст}}\).
+\[\rho_{\text{ст}}&gt;\rho_{\text{в}}\quad\Rightarrow\quad \frac{m_{\text{к}}}{\rho_{\text{ст}}}&lt;\frac{m_{\text{к}}}{\rho_{\text{в}}}.\]
+Витіснений об’єм меншає — рівень води знижується.<br><strong>Відповідь:</strong> а) Не зміниться; б) із сосновою кулькою не зміниться, зі сталевою — знизиться. Початкова крижина з кулькою має плавати.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-91" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-91" aria-label="Посилання на задачу">#</a><h2>Задача 3.91. Вода, весло та ланцюг у човні</h2></header><div class="condition">У басейні плаває човен, у якому є вода, дерев’яне весло та сталевий ланцюг. Як зміниться рівень води в басейні, якщо: а) воду з човна вилити в басейн; б) весло перекласти з човна у воду; в) ланцюг перекласти з човна у воду?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(\rho_{\text{дер}}&lt;\rho_{\text{в}}\)<br>
+\(\rho_{\text{ст}}&gt;\rho_{\text{в}}\)<br><hr><br> \(\Delta h-?\)</td><td class="reasoning"><h4>1. Установимо правило для вантажу в човні.</h4>
+Вантаж масою \(m\) збільшує витіснений човном об’єм води на \(m/\rho_{\text{в}}\).
+<h4>2. Виллємо воду з човна.</h4>
+Човен витіснятиме на \(m/\rho_{\text{в}}\) менше, але в басейн додасться саме такий об’єм води. Рівень не зміниться.
+<h4>3. Перекладемо дерев’яне весло.</h4>
+Весло плаватиме. За законом Архімеда воно саме витіснятиме \(m/\rho_{\text{в}}\), тобто стільки, на скільки зменшиться витіснення човном. Рівень не зміниться.
+<h4>4. Перекладемо сталевий ланцюг.</h4>
+Ланцюг потоне й витіснятиме лише власний об’єм \(m/\rho_{\text{ст}}\), менший за попередній внесок \(m/\rho_{\text{в}}\). Загальний витіснений об’єм зменшиться, рівень знизиться.<br><strong>Відповідь:</strong> а) Не зміниться; б) не зміниться; в) знизиться.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-92" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-92" aria-label="Посилання на задачу">#</a><h2>Задача 3.92. Завантаження судна й перехід у море</h2></header><div class="condition">У річковому порту на судно завантажили 100 т вантажу, і його осадка збільшилася. Після виходу судна в море осадка повернулася до початкової. Густина морської води 1025 кг/м³. а) Яка початкова маса судна? б) Який початковий об’єм зануреної частини судна?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(\Delta m=100\,\text{т}\)<br>
+\(\rho_{\text{р}}=1000\,\text{кг/м}^3\)<br>
+\(\rho_{\text{м}}=1025\,\text{кг/м}^3\)<br><hr><br> \(m-?\)<br>
+\(V-?\)</td><td class="given">\(\Delta m=100\cdot1000=100000\,\text{кг}\)</td><td class="reasoning"><h4>1. Пов’яжемо однакову осадку з однаковим об’ємом.</h4>
+До завантаження в річці та після завантаження в морі занурений об’єм однаковий — позначимо його \(V\).
+<h4>2. Запишемо умову плавання у двох випадках.</h4>
+Після скорочення на \(g\):
+\[m=\rho_{\text{р}}V,\qquad m+\Delta m=\rho_{\text{м}}V.\]
+Віднімемо перше рівняння від другого:
+\[\Delta m=(\rho_{\text{м}}-\rho_{\text{р}})V.\]
+<h4>3. Знайдемо об’єм, потім початкову масу.</h4>
+\[V=\frac{\Delta m}{\rho_{\text{м}}-\rho_{\text{р}}}=\frac{100000}{1025-1000}=4000\,\text{м}^3,\]
+\[m=1000\cdot4000=4000000\,\text{кг}=4000\,\text{т}.\]<br><strong>Відповідь:</strong> а) \(4000\,\text{т}\); б) \(4000\,\text{м}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-102" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-102" aria-label="Посилання на задачу">#</a><h2>Задача 3.102. Натяг троса повітряної кулі</h2></header><div class="condition">Повітряну кулю об’ємом 400 м³ і масою 60 кг утримують біля поверхні Землі вертикальним тросом. Куля заповнена теплим повітрям густиною 0,7 кг/м³. Об’ємом оболонки і вантажу знехтуйте. Чому дорівнює сила натягу троса?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(V=400\,\text{м}^3\)<br>
+\(m_0=60\,\text{кг}\)<br>
+\(\rho_{\text{вн}}=0{,}7\,\text{кг/м}^3\)<br>
+\(\rho_{\text{зов}}=1{,}3\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F_{\text{нат}}-?\)</td><td class="reasoning"><h4>1. Урахуємо масу теплого повітря.</h4>
+Дані \(60\,\text{кг}\) — маса оболонки з вантажем без теплого повітря. Маса повітря всередині \(m_{\text{вн}}=\rho_{\text{вн}}V\), повна маса \(m=m_0+\rho_{\text{вн}}V\).
+<h4>2. Запишемо рівновагу кулі.</h4>
+Сила Архімеда спрямована вгору; тяжіння й натяг троса — вниз:
+\[\rho_{\text{зов}}gV=(m_0+\rho_{\text{вн}}V)g+F_{\text{нат}}.\]
+<h4>3. Виразимо та обчислимо натяг.</h4>
+\[F_{\text{нат}}=\big[(\rho_{\text{зов}}-\rho_{\text{вн}})V-m_0\big]g.\]
+\[F_{\text{нат}}=[(1{,}3-0{,}7)\cdot400-60]\cdot10=1800\,\text{Н}.\]<br><strong>Відповідь:</strong> \(F_{\text{нат}}=1800\,\text{Н}\) за густини зовнішнього повітря \(1{,}3\,\text{кг/м}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-103" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-103" aria-label="Посилання на задачу">#</a><h2>Задача 3.103. Рівновага кулі на висоті</h2></header><div class="condition">Повітряну кулю об’ємом 300 м³ і масою 60 кг утримують біля поверхні Землі тросом. Куля заповнена теплим повітрям густиною 0,6 кг/м³. Після звільнення вона піднялася на деяку висоту. Яка густина зовнішнього повітря на цій висоті? Об’ємом оболонки та вантажу знехтуйте. Об’єм кулі й густина повітря всередині не змінювалися.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(V=300\,\text{м}^3\)<br>
+\(m_0=60\,\text{кг}\)<br>
+\(\rho_{\text{вн}}=0{,}6\,\text{кг/м}^3\)<br><hr><br> \(\rho_{\text{зов}}-?\)</td><td class="reasoning"><h4>1. Знайдемо повну масу кулі.</h4>
+Маса оболонки з вантажем \(m_0\) не включає тепле повітря:
+\[m=m_0+\rho_{\text{вн}}V.\]
+<h4>2. Запишемо умову рівноваги на кінцевій висоті.</h4>
+На висоті сталого плавання сила Архімеда зрівноважує силу тяжіння:
+\[\rho_{\text{зов}}gV=(m_0+\rho_{\text{вн}}V)g.\]
+<h4>3. Скоротимо на \(gV\) та обчислимо густину.</h4>
+\[\rho_{\text{зов}}=\rho_{\text{вн}}+\frac{m_0}{V},\]
+\[\rho_{\text{зов}}=0{,}6+\frac{60}{300}=0{,}8\,\text{кг/м}^3.\]
+Йдеться про висоту рівноваги, а не про випадкову точку руху під час піднімання.<br><strong>Відповідь:</strong> \(\rho_{\text{зов}}=0{,}8\,\text{кг/м}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-106" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-106" aria-label="Посилання на задачу">#</a><h2>Задача 3.106. Дві гелієві кулі</h2></header><div class="condition">Дві наповнені гелієм повітряні кулі з’єднані вертикальним тросом і плавають у повітрі біля поверхні Землі. Перша куля розміщена над другою. Маси оболонок: 20 кг і 10 кг; об’єм першої кулі 20 м³. Масою троса знехтуйте. Знайдіть силу натягу троса та об’єм другої кулі.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=20\,\text{кг}\)<br>
+\(m_2=10\,\text{кг}\)<br>
+\(V_1=20\,\text{м}^3\)<br>
+\(\rho_{\text{п}}=1{,}3\,\text{кг/м}^3\)<br>
+\(\rho_{\text{г}}=0{,}18\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(F_{\text{нат}}-?\)<br>
+\(V_2-?\)</td><td class="reasoning"><h4>1. Запишемо рівновагу верхньої кулі.</h4>
+Натяг діє на неї вниз. Її маса разом із гелієм \(m_1+\rho_{\text{г}}V_1\):
+\[\rho_{\text{п}}gV_1=(m_1+\rho_{\text{г}}V_1)g+F_{\text{нат}}.\]
+Звідси
+\[F_{\text{нат}}=[(\rho_{\text{п}}-\rho_{\text{г}})V_1-m_1]g,\]
+\[F_{\text{нат}}=[(1{,}3-0{,}18)\cdot20-20]\cdot10=24\,\text{Н}.\]
+<h4>2. Запишемо рівновагу нижньої кулі.</h4>
+На нижню кулю натяг діє вгору:
+\[\rho_{\text{п}}gV_2+F_{\text{нат}}=(m_2+\rho_{\text{г}}V_2)g.\]
+Перенесемо доданки та поділимо:
+\[V_2=\frac{m_2-F_{\text{нат}}/g}{\rho_{\text{п}}-\rho_{\text{г}}}=\frac{10-24/10}{1{,}3-0{,}18}\approx6{,}79\,\text{м}^3.\]<br><strong>Відповідь:</strong> \(F_{\text{нат}}=24\,\text{Н}\); \(V_2\approx6{,}79\,\text{м}^3\) за зазначених табличних густин.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-107" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-107" aria-label="Посилання на задачу">#</a><h2>Задача 3.107. Куля, що розширюється</h2></header><div class="condition">Повітряну кулю об’ємом 40 м³ утримують біля поверхні Землі вертикальним тросом, натягнутим із силою 220 Н. Яка густина повітря на висоті рівноваги після звільнення кулі, якщо її об’єм збільшився на 25 %?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(V_0=40\,\text{м}^3\)<br>
+\(F_{\text{нат}}=220\,\text{Н}\)<br>
+\(V=1{,}25V_0\)<br>
+\(\rho_0=1{,}3\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(\rho-?\)</td><td class="reasoning"><h4>1. Знайдемо повну масу кулі разом із газом.</h4>
+Біля землі сила Архімеда зрівноважує тяжіння і натяг:
+\[\rho_0gV_0=mg+F_{\text{нат}}.\]
+\[m=\rho_0V_0-\frac{F_{\text{нат}}}{g}=1{,}3\cdot40-\frac{220}{10}=30\,\text{кг}.\]
+<h4>2. Обчислимо об’єм після розширення.</h4>
+\[V=V_0+0{,}25V_0=1{,}25V_0=50\,\text{м}^3.\]
+Масу системи вважаємо незмінною: газ не виходить із кулі.
+<h4>3. Запишемо кінцеву рівновагу.</h4>
+Без троса \(\rho gV=mg\), тому
+\[\rho=\frac mV=\frac{30}{50}=0{,}6\,\text{кг/м}^3.\]<br><strong>Відповідь:</strong> \(\rho=0{,}6\,\text{кг/м}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-floating-3-108" data-topic="floating"><header class="exercise-header"><span class="topic-label">Тиск рідин. Плавання тіл</span><a class="permalink" href="#exercise-floating-3-108" aria-label="Посилання на задачу">#</a><h2>Задача 3.108. Піднімання каменя повітряною кулею</h2></header><div class="condition">За допомогою наповненої теплим повітрям кулі піднімають із дна озера гранітний камінь об’ємом 0,2 м³. Об’єм кулі 1200 м³, маса оболонки 100 кг. Якою має бути густина теплого повітря: якщо камінь повністю занурений у воду; якщо камінь повністю в повітрі? Об’ємом оболонки знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(V_{\text{к}}=0{,}2\,\text{м}^3\)<br>
+\(V=1200\,\text{м}^3\)<br>
+\(m_0=100\,\text{кг}\)<br>
+\(\rho_{\text{гр}}=2600\,\text{кг/м}^3\)<br>
+\(\rho_{\text{в}}=1000\,\text{кг/м}^3\)<br>
+\(\rho_{\text{п}}=1{,}3\,\text{кг/м}^3\)<br><hr><br> \(\rho_1-?\)<br>
+\(\rho_2-?\)</td><td class="reasoning"><h4>1. Запишемо рівновагу кулі з каменем у воді.</h4>
+Угору діють сила Архімеда на кулю та на камінь. Вниз — тяжіння оболонки, теплого повітря й каменя:
+\[\rho_{\text{п}}V+\rho_{\text{в}}V_{\text{к}}=m_0+\rho_1V+\rho_{\text{гр}}V_{\text{к}}.\]
+Скоротили на \(g\). Звідси
+\[\rho_1=\rho_{\text{п}}-\frac{m_0+(\rho_{\text{гр}}-\rho_{\text{в}})V_{\text{к}}}{V},\]
+\[\rho_1=1{,}3-\frac{100+(2600-1000)\cdot0{,}2}{1200}=0{,}95\,\text{кг/м}^3.\]
+<h4>2. Розглянемо камінь у повітрі.</h4>
+За того самого рівня наближення врахуємо й невелику силу Архімеда повітря на камінь:
+\[\rho_2=\rho_{\text{п}}-\frac{m_0+(\rho_{\text{гр}}-\rho_{\text{п}})V_{\text{к}}}{V}.\]
+\[\rho_2=1{,}3-\frac{100+(2600-1{,}3)\cdot0{,}2}{1200}\approx0{,}784\,\text{кг/м}^3.\]
+Якщо не враховувати виштовхування каменя повітрям, виходить \(0{,}783\,\text{кг/м}^3\). Наведені значення відповідають рівновазі; для початку піднімання густина має бути трохи меншою.<br><strong>Відповідь:</strong> У воді — не більше \(0{,}95\,\text{кг/м}^3\), у повітрі — приблизно \(0{,}784\,\text{кг/м}^3\); для руху вгору потрібне невелике зменшення густини.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-3-114" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-3-114" aria-label="Посилання на задачу">#</a><h2>Задача 3.114. Енергія кульки під час падіння</h2></header><div class="condition">Кулька масою 200 г падає з висоти 3 м. Чому дорівнюють її кінетична та потенціальна енергії на висоті 2 м? Опором повітря знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=200\,\text{г}\)<br>
+\(h_0=3\,\text{м}\)<br>
+\(h=2\,\text{м}\)<br>
+\(v_0=0\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(E_{\text{к}}-?\)<br>
+\(E_{\text{п}}-?\)</td><td class="given">\(m=200/1000=0{,}2\,\text{кг}\)</td><td class="reasoning"><h4>1. Оберемо нульовий рівень потенціальної енергії.</h4>
+Відлічуємо висоту від землі, тому \(E_{\text{п}}=mgh\). Кульку вважаємо відпущеною без початкової швидкості.
+<h4>2. Знайдемо повну початкову енергію.</h4>
+\[E=E_{\text{п}0}+E_{\text{к}0}=mgh_0=0{,}2\cdot10\cdot3=6\,\text{Дж}.\]
+<h4>3. Застосуємо збереження механічної енергії.</h4>
+На висоті \(h\):
+\[E_{\text{п}}=mgh=0{,}2\cdot10\cdot2=4\,\text{Дж},\]
+\[E_{\text{к}}=E-E_{\text{п}}=mg(h_0-h)=6-4=2\,\text{Дж}.\]<br><strong>Відповідь:</strong> \(E_{\text{к}}=2\,\text{Дж}\), \(E_{\text{п}}=4\,\text{Дж}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-3-115" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-3-115" aria-label="Посилання на задачу">#</a><h2>Задача 3.115. Зменшення потенціальної енергії</h2></header><div class="condition">Кулька масою 100 г падає з висоти 20 м. Опором повітря знехтуйте. а) На якій висоті її потенціальна енергія менша від початкової на 5 Дж? б) Чому дорівнює кінетична енергія на цій висоті?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=100\,\text{г}\)<br>
+\(h_0=20\,\text{м}\)<br>
+\(\Delta E_{\text{п}}=5\,\text{Дж}\)<br>
+\(v_0=0\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(h-?\)<br>
+\(E_{\text{к}}-?\)</td><td class="given">\(m=100/1000=0{,}1\,\text{кг}\)</td><td class="reasoning"><h4>1. Виразимо втрату потенціальної енергії.</h4>
+\[\Delta E_{\text{п}}=mgh_0-mgh=mg(h_0-h).\]
+<h4>2. Знайдемо висоту.</h4>
+Поділимо на \(mg\) та перенесемо доданки:
+\[h=h_0-\frac{\Delta E_{\text{п}}}{mg}.\]
+\[h=20-\frac5{0{,}1\cdot10}=15\,\text{м}.\]
+<h4>3. Знайдемо набуту кінетичну енергію.</h4>
+Початкова швидкість нульова. Без опору повітря зменшення потенціальної енергії дорівнює збільшенню кінетичної:
+\[E_{\text{к}}=\Delta E_{\text{п}}=5\,\text{Дж}.\]<br><strong>Відповідь:</strong> а) \(h=15\,\text{м}\); б) \(E_{\text{к}}=5\,\text{Дж}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-4-65" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-4-65" aria-label="Посилання на задачу">#</a><h2>Задача 4.65 / 3.116. Енергія каменя в різних точках траєкторії</h2></header><div class="condition">Камінь масою 0,3 кг кинули з висоти 2 м під кутом до горизонту зі швидкістю 10 м/с. Опором повітря знехтуйте. а) Яка механічна енергія каменя одразу після кидання? б) Яка вона у верхній точці траєкторії? в) Яка вона безпосередньо перед падінням на землю?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=0{,}3\,\text{кг}\)<br>
+\(h_0=2\,\text{м}\)<br>
+\(v_0=10\,\text{м/с}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(E_0-?\)<br>
+\(E_{\text{верх}}-?\)<br>
+\(E_{\text{зем}}-?\)</td><td class="reasoning"><h4>1. Додамо початкові потенціальну й кінетичну енергії.</h4>
+За нульового рівня потенціальної енергії на землі:
+\[E_0=mgh_0+\frac{mv_0^2}{2}.\]
+\[E_0=0{,}3\cdot10\cdot2+\frac{0{,}3\cdot10^2}{2}=6+15=21\,\text{Дж}.\]
+<h4>2. Застосуємо закон збереження енергії.</h4>
+Опору повітря немає, тому сума \(E_{\text{п}}+E_{\text{к}}\) залишається сталою в усіх точках:
+\[E_{\text{верх}}=E_0=21\,\text{Дж},\qquad E_{\text{зем}}=E_0=21\,\text{Дж}.\]
+У верхній точці нульова лише вертикальна складова швидкості; горизонтальна може залишатися ненульовою. Тому не можна вважати всю енергію там лише потенціальною.<br><strong>Відповідь:</strong> а), б), в) — по \(21\,\text{Дж}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-4-66" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-4-66" aria-label="Посилання на задачу">#</a><h2>Задача 4.66 / 3.117. Рівність енергій під час горизонтального кидка</h2></header><div class="condition">Кульку кинули горизонтально зі швидкістю 20 м/с з висоти 50 м. На якій висоті її кінетична енергія дорівнюватиме потенціальній? Опором повітря знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(v_0=20\,\text{м/с}\)<br>
+\(h_0=50\,\text{м}\)<br>
+\(E_{\text{к}}=E_{\text{п}}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(h-?\)</td><td class="reasoning"><h4>1. Запишемо початкову механічну енергію.</h4>
+Відлік висоти — від землі:
+\[E=mgh_0+\frac{mv_0^2}{2}.\]
+<h4>2. Використаємо рівність двох видів енергії.</h4>
+На шуканій висоті \(E_{\text{к}}=E_{\text{п}}=mgh\), тому повна енергія дорівнює \(2mgh\):
+\[2mgh=mgh_0+\frac{mv_0^2}{2}.\]
+<h4>3. Скоротимо масу та виразимо висоту.</h4>
+\[2gh=gh_0+\frac{v_0^2}{2},\qquad h=\frac{h_0}{2}+\frac{v_0^2}{4g}.\]
+\[h=\frac{50}{2}+\frac{20^2}{4\cdot10}=25+10=35\,\text{м}.\]<br><strong>Відповідь:</strong> \(h=35\,\text{м}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-4-67" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-4-67" aria-label="Посилання на задачу">#</a><h2>Задача 4.67 / 3.118. Енергії кульки на висоті 4 м</h2></header><div class="condition">Кульку масою 400 г кинули вертикально вгору з початковою швидкістю 10 м/с. Чому дорівнюють її кінетична та потенціальна енергії на висоті 4 м? Опором повітря знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=400\,\text{г}\)<br>
+\(v_0=10\,\text{м/с}\)<br>
+\(h=4\,\text{м}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(E_{\text{к}}-?\)<br>
+\(E_{\text{п}}-?\)</td><td class="given">\(m=400/1000=0{,}4\,\text{кг}\)</td><td class="reasoning"><h4>1. Виберемо початкову точку нульовим рівнем.</h4>
+Початкова потенціальна енергія дорівнює нулю, тому повна енергія
+\[E=\frac{mv_0^2}{2}=\frac{0{,}4\cdot10^2}{2}=20\,\text{Дж}.\]
+<h4>2. Знайдемо потенціальну енергію на висоті 4 м.</h4>
+\[E_{\text{п}}=mgh=0{,}4\cdot10\cdot4=16\,\text{Дж}.\]
+<h4>3. Знайдемо кінетичну енергію як різницю.</h4>
+\[E_{\text{к}}=E-E_{\text{п}}=20-16=4\,\text{Дж}.\]
+Ці значення однакові під час піднімання й падіння на тій самій висоті.<br><strong>Відповідь:</strong> \(E_{\text{к}}=4\,\text{Дж}\), \(E_{\text{п}}=16\,\text{Дж}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-4-68" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-4-68" aria-label="Посилання на задачу">#</a><h2>Задача 4.68 / 3.119. Вертикальний постріл пружиною</h2></header><div class="condition">Із пружинного іграшкового пістолета стріляють кулькою масою 20 г вертикально вгору. Початкова деформація пружини 5 см, жорсткість — 600 Н/м. До якої висоти підніметься кулька? Опором повітря й розмірами пружини порівняно з висотою піднімання знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=20\,\text{г}\)<br>
+\(x=5\,\text{см}\)<br>
+\(k=600\,\text{Н/м}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(h-?\)</td><td class="given">\(m=20/1000=0{,}02\,\text{кг}\)<br>
+\(x=5/100=0{,}05\,\text{м}\)</td><td class="reasoning"><h4>1. Запишемо початкову енергію пружини.</h4>
+Для деформації \(x\):
+\[E_{\text{пруж}}=\frac{kx^2}{2}.\]
+<h4>2. Прирівняємо її до потенціальної енергії кульки вгорі.</h4>
+У найвищій точці кулька на мить зупиняється. Уся початкова енергія пружини перейшла в енергію піднятої кульки:
+\[\frac{kx^2}{2}=mgh.\]
+Висоту відлічуємо від початкового положення кульки; розмірами пружини за умовою нехтуємо.
+<h4>3. Виразимо висоту.</h4>
+\[h=\frac{kx^2}{2mg}=\frac{600\cdot0{,}05^2}{2\cdot0{,}02\cdot10}=3{,}75\,\text{м}.\]<br><strong>Відповідь:</strong> \(h=3{,}75\,\text{м}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-energy-3-120" data-topic="energy"><header class="exercise-header"><span class="topic-label">Механічна енергія</span><a class="permalink" href="#exercise-energy-3-120" aria-label="Посилання на задачу">#</a><h2>Задача 3.120. Горизонтальний постріл пружиною</h2></header><div class="condition">Із пружинного іграшкового пістолета стріляють кулькою масою 20 г горизонтально з висоти 6 м. Початкова деформація пружини 2 см, жорсткість — 600 Н/м. На якій висоті кінетична енергія кульки дорівнюватиме потенціальній? Опором повітря й розмірами пружини знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=20\,\text{г}\)<br>
+\(h_0=6\,\text{м}\)<br>
+\(x=2\,\text{см}\)<br>
+\(k=600\,\text{Н/м}\)<br>
+\(g=10\,\text{Н/кг}\)<br>
+\(E_{\text{к}}=E_{\text{п}}\)<br><hr><br> \(h-?\)</td><td class="given">\(m=20/1000=0{,}02\,\text{кг}\)<br>
+\(x=2/100=0{,}02\,\text{м}\)</td><td class="reasoning"><h4>1. Знайдемо повну початкову енергію.</h4>
+Нульовий рівень — земля. Енергія стиснутої пружини переходить у початкову кінетичну енергію кульки:
+\[E=mgh_0+\frac{kx^2}{2}.\]
+<h4>2. Використаємо умову рівності енергій.</h4>
+На шуканій висоті кожен вид енергії дорівнює \(mgh\), тому
+\[2mgh=mgh_0+\frac{kx^2}{2}.\]
+<h4>3. Поділимо на \(2mg\) й обчислимо.</h4>
+\[h=\frac{h_0}{2}+\frac{kx^2}{4mg},\]
+\[h=\frac62+\frac{600\cdot0{,}02^2}{4\cdot0{,}02\cdot10}=3+0{,}3=3{,}3\,\text{м}.\]<br><strong>Відповідь:</strong> \(h=3{,}3\,\text{м}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-2-98" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-2-98" aria-label="Посилання на задачу">#</a><h2>Задача 2.98. Тертя двох зв’язаних брусків</h2></header><div class="condition">По столу рівномірно переміщують два зв’язані ниткою бруски, прикладаючи горизонтальну силу 8 Н. Маси брусків рівні. Чому дорівнює відношення коефіцієнтів тертя між брусками і столом, якщо сила натягу нитки, що їх зв’язує, дорівнює 5 Н?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(F=8\,\text{Н}\)<br>
+\(F_{\text{нат}}=5\,\text{Н}\)<br>
+\(m_1=m_2=m\)<br><hr><br> \(\mu_1/\mu_2-?\)</td><td class="reasoning"><h4>1. Уточнимо, який брусок має номер 1.</h4>
+Перший брусок тягнемо зовнішньою силою \(F\), другий рухається за ним. За рівномірного руху сили на кожному бруску зрівноважені.
+<h4>2. Знайдемо сили тертя.</h4>
+На другий брусок нитка діє вперед, а тертя — назад:
+\[F_{\text{тер},2}=F_{\text{нат}}.\]
+На перший брусок і тертя, і натяг діють назад:
+\[F=F_{\text{тер},1}+F_{\text{нат}}.\]
+Отже, \(F_{\text{тер},1}=8-5=3\,\text{Н}\), \(F_{\text{тер},2}=5\,\text{Н}\).
+<h4>3. Скористаємося рівністю мас.</h4>
+На горизонтальному столі \(F_{\text{тер}}=\mu mg\). Тому
+\[\frac{\mu_1}{\mu_2}=\frac{F_{\text{тер},1}}{F_{\text{тер},2}}=\frac35.\]<br><strong>Відповідь:</strong> Для бруска, який тягнемо, та бруска позаду: \(\mu_1:\mu_2=3:5\); у зворотному порядку \(5:3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-2-99" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-2-99" aria-label="Посилання на задачу">#</a><h2>Задача 2.99. Графік сили тертя</h2></header><div class="condition">На столі лежить брусок, маса якого 600 г. На графіку залежності сили тертя від модуля прикладеної горизонтальної сили відрізок іде від точки (0 Н; 0 Н) до (3 Н; 3 Н), далі сила тертя залишається рівною 3 Н. а) Який коефіцієнт тертя між бруском і столом? б) Яка сила тертя, якщо прикладена сила дорівнює 10 Н?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=600\,\text{г}\)<br>
+\(F_{\text{тер ковз}}=3\,\text{Н}\)<br>
+\(F=10\,\text{Н}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(\mu-?\)<br>
+\(F_{\text{тер}}-?\)</td><td class="given">\(m=600/1000=0{,}6\,\text{кг}\)</td><td class="reasoning"><h4>1. Прочитаємо горизонтальну частину графіка.</h4>
+Під час ковзання сила тертя стала: \(F_{\text{тер ковз}}=3\,\text{Н}\). Зростаючий відрізок відповідає тертю спокою, яке зрівноважує зовнішню силу.
+<h4>2. Виразимо коефіцієнт тертя.</h4>
+На горизонтальній поверхні \(N=mg\), тому
+\[F_{\text{тер ковз}}=\mu mg,\qquad \mu=\frac{F_{\text{тер ковз}}}{mg}.\]
+\[\mu=\frac3{0{,}6\cdot10}=0{,}5.\]
+<h4>3. Визначимо тертя за сили 10 Н.</h4>
+Оскільки \(10\,\text{Н}&gt;3\,\text{Н}\), брусок ковзає. Сила тертя дорівнює \(3\,\text{Н}\), а не \(10\,\text{Н}\).<br><strong>Відповідь:</strong> а) \(\mu=0{,}5\); б) \(F_{\text{тер}}=3\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-3-6" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-3-6" aria-label="Посилання на задачу">#</a><h2>Задача 3.6. Тиск двох кубів</h2></header><div class="condition">Два суцільні куби виготовлені з тієї самої речовини. Ребро першого куба вдвічі більше за ребро другого. Який куб чинить більший тиск на опору та у скільки разів?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(\rho_1=\rho_2=\rho\)<br>
+\(a_1=2a_2\)<br><hr><br> \(p_1/p_2-?\)</td><td class="reasoning"><h4>1. Виразимо силу тиску та площу опори.</h4>
+Для куба з ребром \(a\): \(V=a^3\), \(m=\rho a^3\), площа грані \(S=a^2\). Сила тиску на горизонтальну опору дорівнює \(mg\).
+<h4>2. Скоротимо спільні множники у формулі тиску.</h4>
+\[p=\frac{F}{S}=\frac{\rho a^3g}{a^2}=\rho ga.\]
+За однакової речовини тиск прямо пропорційний ребру куба:
+\[\frac{p_1}{p_2}=\frac{\rho ga_1}{\rho ga_2}=\frac{a_1}{a_2}=2.\]<br><strong>Відповідь:</strong> Перший куб чинить удвічі більший тиск.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-3-7" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-3-7" aria-label="Посилання на задачу">#</a><h2>Задача 3.7. Тиск мармурової плити</h2></header><div class="condition">Який тиск чинить на опору плита завтовшки \(d\), що лежить на ній, якщо густина речовини плити дорівнює \(\rho\)? Який тиск чинить мармурова плита завтовшки 20 см?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(d=20\,\text{см}\)<br>
+\(\rho=2700\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(p(\rho,d)-?\)<br>
+\(p-?\)</td><td class="given">\(d=20/100=0{,}2\,\text{м}\)</td><td class="reasoning"><h4>1. Виразимо масу плити через площу опори.</h4>
+Нехай \(S\) — площа нижньої поверхні. Тоді \(V=Sd\), \(m=\rho Sd\).
+<h4>2. Підставимо масу у формулу тиску.</h4>
+\[p=\frac{mg}{S}=\frac{\rho Sdg}{S}=\rho gd.\]
+Площа опори скоротилася: тиск однорідної плити залежить від її товщини та густини.
+<h4>3. Обчислимо тиск мармуру.</h4>
+\[p=2700\cdot10\cdot0{,}2=5400\,\text{Па}.\]<br><strong>Відповідь:</strong> \(p=\rho gd\); для мармурової плити \(5400\,\text{Па}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-3-8" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-3-8" aria-label="Посилання на задачу">#</a><h2>Задача 3.8. Порожнина в одному з кубів</h2></header><div class="condition">На столі стоять алюмінієвий та мідний куби, ребро кожного з яких дорівнює 10 см. Куби чинять рівні тиски на стіл, але один із них суцільний, а в іншому є порожнина. У якому кубі є порожнина? Чому дорівнює її об’єм?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(a=10\,\text{см}\)<br>
+\(p_{\text{а}}=p_{\text{м}}\)<br>
+\(\rho_{\text{а}}=2{,}7\,\text{г/см}^3\)<br>
+\(\rho_{\text{м}}=8{,}9\,\text{г/см}^3\)<br><hr><br> \(V_{\text{пор}}-?\)</td><td class="reasoning"><h4>1. Із рівності тисків установимо рівність мас.</h4>
+Площі опори однакові. Із \(p=mg/S\) випливає \(m_{\text{а}}=m_{\text{м}}\). Мідь густіша, тому для рівності мас саме мідний куб має порожнину.
+<h4>2. Виразимо масу кожного куба.</h4>
+Зовнішній об’єм \(V=a^3\). Алюмінієвий куб суцільний, тому
+\[\rho_{\text{а}}V=\rho_{\text{м}}(V-V_{\text{пор}}).\]
+Розкриємо дужки та поділимо на \(\rho_{\text{м}}\):
+\[V_{\text{пор}}=V\left(1-\frac{\rho_{\text{а}}}{\rho_{\text{м}}}\right).\]
+<h4>3. Обчислимо в сантиметрах кубічних.</h4>
+\[V=10^3=1000\,\text{см}^3,\]
+\[V_{\text{пор}}=1000\left(1-\frac{2{,}7}{8{,}9}\right)\approx697\,\text{см}^3.\]<br><strong>Відповідь:</strong> Порожнина в мідному кубі; її об’єм приблизно \(697\,\text{см}^3\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-3-9" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-3-9" aria-label="Посилання на задачу">#</a><h2>Задача 3.9. Рівні тиски різних кубів</h2></header><div class="condition">Алюмінієвий та мідний суцільні куби чинять рівні тиски на опору. а) Ребро якого куба більше і в скільки разів? б) Маса якого куба більша і в скільки разів?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(p_{\text{а}}=p_{\text{м}}\)<br>
+\(\rho_{\text{а}}=2700\,\text{кг/м}^3\)<br>
+\(\rho_{\text{м}}=8900\,\text{кг/м}^3\)<br><hr><br> \(a_{\text{а}}/a_{\text{м}}-?\)<br>
+\(m_{\text{а}}/m_{\text{м}}-?\)</td><td class="reasoning"><h4>1. Знайдемо відношення ребер.</h4>
+Для суцільного куба \(p=\rho ga\). Рівність тисків дає
+\[\rho_{\text{а}}ga_{\text{а}}=\rho_{\text{м}}ga_{\text{м}},\qquad \frac{a_{\text{а}}}{a_{\text{м}}}=\frac{\rho_{\text{м}}}{\rho_{\text{а}}}.\]
+\[\frac{a_{\text{а}}}{a_{\text{м}}}=\frac{8900}{2700}\approx3{,}30.\]
+<h4>2. Виразимо масу через тиск і площу опори.</h4>
+Із \(p=mg/a^2\) маємо \(m=pa^2/g\). Тиски однакові, отже
+\[\frac{m_{\text{а}}}{m_{\text{м}}}=\left(\frac{a_{\text{а}}}{a_{\text{м}}}\right)^2=\left(\frac{89}{27}\right)^2\approx10{,}87.\]<br><strong>Відповідь:</strong> В алюмінієвого куба ребро більше приблизно у \(3{,}30\) раза, а маса — у \(10{,}87\) раза.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-3-10" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-3-10" aria-label="Посилання на задачу">#</a><h2>Задача 3.10. Маса куба за його тиском</h2></header><div class="condition">Суцільний алюмінієвий куб чинить на горизонтальну опору тиск 2 кПа. Чому дорівнює маса куба?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">СІ</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(p=2\,\text{кПа}\)<br>
+\(\rho=2700\,\text{кг/м}^3\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(m-?\)</td><td class="given">\(p=2\cdot1000=2000\,\text{Па}\)</td><td class="reasoning"><h4>1. Знайдемо ребро куба без добування коренів.</h4>
+Для ребра \(a\) маємо \(m=\rho a^3\) і \(S=a^2\). Тому
+\[p=\frac{mg}{S}=\frac{\rho a^3g}{a^2}=\rho ga.\]
+Звідси
+\[a=\frac{p}{\rho g}=\frac{2000}{2700\cdot10}=\frac2{27}\,\text{м}.\]
+<h4>2. Обчислимо об’єм, а потім масу.</h4>
+\[m=\rho a^3=2700\left(\frac2{27}\right)^3\approx1{,}10\,\text{кг}.\]
+Усі перетворення виконано діленням і піднесенням до третього степеня.<br><strong>Відповідь:</strong> Маса куба приблизно \(1{,}10\,\text{кг}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-92" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-92" aria-label="Посилання на задачу">#</a><h2>Задача 4.92. Два вантажі на важелі</h2></header><div class="condition">На кінцях важеля зрівноважені два вантажі. Маса одного з вантажів на 600 г більша за масу іншого, а плече одного з вантажів у 1,5 раза довше за плече іншого. Чому дорівнює маса меншого вантажу? Масою важеля знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{б}}-m_{\text{м}}=600\,\text{г}\)<br>
+\(s_{\text{дов}}=1{,}5s_{\text{кор}}\)<br><hr><br> \(m_{\text{м}}-?\)</td><td class="reasoning"><h4>1. Визначимо, де розташований менший вантаж.</h4>
+За правилом моментів \(m_{\text{м}}gs_{\text{дов}}=m_{\text{б}}gs_{\text{кор}}\). Отже, менший вантаж розташований на довшому плечі.
+<h4>2. Скоротимо на спільні множники.</h4>
+Підставимо \(s_{\text{дов}}=1{,}5s_{\text{кор}}\) і скоротимо на \(gs_{\text{кор}}\):
+\[1{,}5m_{\text{м}}=m_{\text{б}}.\]
+<h4>3. Використаємо різницю мас.</h4>
+\[1{,}5m_{\text{м}}-m_{\text{м}}=600\,\text{г},\]
+\[0{,}5m_{\text{м}}=600\,\text{г},\qquad m_{\text{м}}=1200\,\text{г}.\]
+Перевірка: більша маса \(1800\,\text{г}\); її відношення до меншої \(1{,}5\).<br><strong>Відповідь:</strong> Маса меншого вантажу \(1200\,\text{г}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-93" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-93" aria-label="Посилання на задачу">#</a><h2>Задача 4.93. Піднімання кінця дошки</h2></header><div class="condition">Щоб підняти один кінець дошки, що лежить на землі, потрібно прикласти вертикальну силу 40 Н. Чому дорівнює маса дошки?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(F=40\,\text{Н}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Оберемо точку обертання.</h4>
+У момент початку піднімання дошка спирається на протилежний кінець. Вважаємо дошку однорідною: сила тяжіння прикладена до її середини. Нехай довжина дошки \(s\).
+<h4>2. Запишемо рівність моментів.</h4>
+Плече прикладеної сили дорівнює \(s\), плече тяжіння — \(s/2\):
+\[Fs=mg\frac s2.\]
+Після скорочення на \(s\) маємо \(F=mg/2\).
+<h4>3. Виразимо масу.</h4>
+\[m=\frac{2F}{g}=\frac{2\cdot40}{10}=8\,\text{кг}.\]<br><strong>Відповідь:</strong> \(m=8\,\text{кг}\) для однорідної дошки.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-94" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-94" aria-label="Посилання на задачу">#</a><h2>Задача 4.94. Лінійка на краю стола</h2></header><div class="condition">Лінійка перебуває в рівновазі на столі перпендикулярно до його краю. Кінець лінійки виходить за край стола не більше ніж на 1/3 довжини всієї лінійки і на цьому кінці лежить маленький тягарець масою 20 г. Чому дорівнює маса лінійки?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{т}}=20\,\text{г}\)<br>
+\(s_{\text{вист}}\leq s/3\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Розглянемо найбільшу можливу виступаючу частину.</h4>
+Числову масу можна знайти, якщо \(s/3\) — саме гранична довжина виступу перед перекиданням. Лінійку вважаємо однорідною; її центр мас — посередині.
+<h4>2. Обчислимо плечі відносно краю стола.</h4>
+Для тягарця плече \(s/3\). Середина лінійки розташована всередині стола на відстані
+\[s_{\text{л}}=\frac s2-\frac s3=\frac s6.\]
+<h4>3. Застосуємо правило моментів на межі перекидання.</h4>
+\[mg\frac s6=m_{\text{т}}g\frac s3,\qquad m=2m_{\text{т}}=40\,\text{г}.\]
+<h4>4. Звернімо увагу на формулювання.</h4>
+Якщо відомо лише, що лінійка не перекидається за виступу \(s/3\), то правило моментів дає \(m\geq40\,\text{г}\), а не єдину масу. Якщо фактичний виступ лише менший за \(s/3\) і граничний виступ невідомий, цих даних для визначення маси недостатньо.<br><strong>Відповідь:</strong> \(40\,\text{г}\), якщо \(s/3\) — найбільший допустимий виступ, як передбачено у підказці до задачі.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-95" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-95" aria-label="Посилання на задачу">#</a><h2>Задача 4.95. Система з трьох блоків</h2></header><div class="condition">Гирю масою 16 кг піднімають системою блоків, зображеною на рис. 4.7: два верхні блоки закріплені, а нижній рухомий блок з’єднаний із гирею. а) Скільки в системі рухомих і нерухомих блоків? б) Яку силу потрібно прикладати до вільного кінця мотузки?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m=16\,\text{кг}\)<br>
+\(g=10\,\text{Н/кг}\)<br>
+\(n_{\text{рух}}=1\)<br>
+\(n_{\text{нерух}}=2\)<br><hr><br> \(F-?\)</td><td class="reasoning"><h4>1. Розрізнимо нерухомі та рухомі блоки.</h4>
+Два верхні блоки закріплені на опорі. Нижній піднімається разом із гирею, тому він рухомий.
+<h4>2. Порахуємо гілки мотузки, які підтримують гирю.</h4>
+Рухомий блок підтримують дві гілки. В ідеальній системі натяг кожної гілки однаковий і дорівнює силі \(F\) на вільному кінці. Масою блоків і тертям нехтуємо.
+\[2F=mg,\qquad F=\frac{mg}{2}.\]
+<h4>3. Обчислимо силу.</h4>
+\[F=\frac{16\cdot10}{2}=80\,\text{Н}.\]
+Додаткові нерухомі блоки змінюють напрям мотузки, але не збільшують виграш у силі.<br><strong>Відповідь:</strong> а) Два нерухомі та один рухомий блок; б) \(80\,\text{Н}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-96" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-96" aria-label="Посилання на задачу">#</a><h2>Задача 4.96. Маса вантажу на рухомому блоці</h2></header><div class="condition">Для піднімання вантажу системою блоків на рис. 4.8 до вільного кінця мотузки прикладають силу 20 Н. Система складається з одного рухомого блока з вантажем та одного верхнього нерухомого блока; кінець мотузки закріплений на опорі. Чому дорівнює маса вантажу?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(F=20\,\text{Н}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Запишемо рівновагу рухомого блока.</h4>
+Вантаж і рухомий блок підтримують дві гілки мотузки. За відсутності тертя натяг кожної гілки дорівнює \(F\). Масою блоків нехтуємо.
+\[mg=2F.\]
+<h4>2. Виразимо та обчислимо масу.</h4>
+\[m=\frac{2F}{g}=\frac{2\cdot20}{10}=4\,\text{кг}.\]
+Верхній нерухомий блок дозволяє тягнути вниз, зберігаючи дворазовий виграш у силі.<br><strong>Відповідь:</strong> \(m=4\,\text{кг}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-97" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-97" aria-label="Посилання на задачу">#</a><h2>Задача 4.97. Візок на похилій площині</h2></header><div class="condition">Візок масою 4 кг піднімають уздовж похилої площини завдовжки 3 м і заввишки 1,5 м за допомогою вантажу та нерухомого блока на вершині площини (рис. 4.9). Чому дорівнює маса підвішеного вантажу?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{в}}=4\,\text{кг}\)<br>
+\(s=3\,\text{м}\)<br>
+\(h=1{,}5\,\text{м}\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Застосуємо правило рівності робіт.</h4>
+Для рівномірного руху без тертя робота сили натягу на шляху \(s\) дорівнює збільшенню потенціальної енергії візка:
+\[Fs=m_{\text{в}}gh,\qquad F=m_{\text{в}}g\frac hs.\]
+<h4>2. Пов’яжемо натяг із масою підвішеного вантажу.</h4>
+Нерухомий блок лише змінює напрям сили. Для вантажу, який опускається рівномірно, \(F=mg\). Тому
+\[mg=m_{\text{в}}g\frac hs,\qquad m=m_{\text{в}}\frac hs.\]
+<h4>3. Обчислимо масу.</h4>
+\[m=4\cdot\frac{1{,}5}{3}=2\,\text{кг}.\]
+Це маса для рівноваги або рівномірного піднімання в ідеальній системі. Для початку прискореного піднімання вона має бути трохи більшою.<br><strong>Відповідь:</strong> \(m=2\,\text{кг}\) за нехтування тертям і масою блока.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-98" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-98" aria-label="Посилання на задачу">#</a><h2>Задача 4.98. Похила площина: бракує рисунка</h2></header><div class="condition">Візок піднімають уздовж похилої площини завдовжки 4 м і заввишки 1 м, використовуючи блок (рис. 4.10). Чому дорівнює маса візка, якщо до вільного кінця мотузки прикладають силу 40 Н? На наданому фото рисунка 4.10 немає.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(s=4\,\text{м}\)<br>
+\(h=1\,\text{м}\)<br>
+\(F=40\,\text{Н}\)<br>
+\(g=10\,\text{Н/кг}\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Визначимо, які дані дає похила площина.</h4>
+Без тертя для рівномірного руху сила вздовж площини \(F_{\text{в}}\) задовольняє умову
+\[F_{\text{в}}s=mgh,\qquad m=\frac{F_{\text{в}}s}{gh}.\]
+<h4>2. Розглянемо варіант із нерухомим блоком.</h4>
+Якщо блок тільки змінює напрям мотузки, \(F_{\text{в}}=F\):
+\[m=\frac{Fs}{gh}=\frac{40\cdot4}{10\cdot1}=16\,\text{кг}.\]
+<h4>3. Розглянемо варіант із рухомим блоком на візку.</h4>
+Якщо вздовж площини візок тягнуть дві паралельні гілки мотузки, \(F_{\text{в}}=2F\):
+\[m=\frac{2Fs}{gh}=\frac{2\cdot40\cdot4}{10\cdot1}=32\,\text{кг}.\]
+Вибрати між цими випадками без рисунка неможливо; за іншого напряму гілок схема може давати інше співвідношення сил.<br><strong>Відповідь:</strong> Єдиної числової відповіді без рис. 4.10 немає: \(16\,\text{кг}\) для нерухомого блока або \(32\,\text{кг}\) для описаного рухомого.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-107" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-107" aria-label="Посилання на задачу">#</a><h2>Задача 4.107. Важіль із власною масою</h2></header><div class="condition">Важіль зрівноважено (рис. 4.13). Знайдіть його масу, якщо на лівому кінці висить вантаж масою 1 кг, на правому — 3 кг. Ліве плече містить чотири однакові поділки, праве — дві. Силу тяжіння важеля вважайте прикладеною в його середині.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=1\,\text{кг}\)<br>
+\(m_2=3\,\text{кг}\)<br>
+\(s_1=4d\)<br>
+\(s_2=2d\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Знайдемо плече сили тяжіння важеля.</h4>
+Повна довжина важеля \(6d\), його середина — за \(3d\) від лівого кінця. Опора розміщена за \(4d\) від цього кінця. Отже, центр мас ліворуч від опори на відстані \(d\).
+<h4>2. Запишемо правило моментів із трьома силами.</h4>
+Лівий вантаж і вага важеля обертають його в один бік; правий вантаж — у протилежний:
+\[m_1g\cdot4d+mg\cdot d=m_2g\cdot2d.\]
+<h4>3. Скоротимо та виразимо масу важеля.</h4>
+\[4m_1+m=2m_2,\qquad m=2m_2-4m_1.\]
+\[m=2\cdot3-4\cdot1=2\,\text{кг}.\]<br><strong>Відповідь:</strong> Маса важеля \(2\,\text{кг}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-108" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-108" aria-label="Посилання на задачу">#</a><h2>Задача 4.108. Де розмістити точку опори</h2></header><div class="condition">На кінцях важеля зрівноважені дві гирі масами 2 кг і 3 кг. На якій відстані від важчої гирі розміщена точка опори, якщо маса важеля 1 кг, а його довжина 80 см?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=2\,\text{кг}\)<br>
+\(m_2=3\,\text{кг}\)<br>
+\(m_0=1\,\text{кг}\)<br>
+\(s=80\,\text{см}\)<br><hr><br> \(x-?\)</td><td class="reasoning"><h4>1. Позначимо шукане плече через \(x\).</h4>
+Важіль вважаємо однорідним, його центр мас — посередині. Відстань опори від гирі \(3\,\text{кг}\) дорівнює \(x\); від гирі \(2\,\text{кг}\) — \(s-x\). Опора ближча до важчої гирі, тому плече власної ваги важеля дорівнює \(s/2-x\).
+<h4>2. Запишемо рівність моментів.</h4>
+\[m_2gx=m_1g(s-x)+m_0g(s/2-x).\]
+Скоротимо \(g\), розкриємо дужки й зберемо доданки з \(x\):
+\[(m_1+m_2+m_0)x=m_1s+m_0s/2.\]
+<h4>3. Виразимо та обчислимо відстань.</h4>
+\[x=\frac{m_1s+m_0s/2}{m_1+m_2+m_0},\]
+\[x=\frac{2\cdot80+1\cdot40}{2+3+1}=\frac{100}{3}\,\text{см}\approx33{,}3\,\text{см}.\]<br><strong>Відповідь:</strong> Приблизно \(33{,}3\,\text{см}\) від гирі масою \(3\,\text{кг}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-109" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-109" aria-label="Посилання на задачу">#</a><h2>Задача 4.109. Зважування на нерівноплечих терезах</h2></header><div class="condition">Як зважити 1 кг вишень за допомогою нерівноплечих терезів, маючи кілограмову гирю та достатньо велику масу вишень?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{гирі}}=1\,\text{кг}\)<br>
+\(s_1\ne s_2\)<br><hr><br> \(m_{\text{вишень}}-?\)</td><td class="reasoning"><h4>1. Створимо противагу гирі.</h4>
+Покладемо гирю на ліву шальку. На праву додаватимемо вишні до рівноваги. Позначимо масу цих вишень через \(m_{\text{п}}\):
+\[m_{\text{гирі}}gs_1=m_{\text{п}}gs_2.\]
+Маса праворуч не обов’язково дорівнює одному кілограму.
+<h4>2. Замінимо гирю вишнями на тій самій шальці.</h4>
+Гирю знімемо, вишні справа залишимо. На ліву шальку додаватимемо інші вишні до відновлення рівноваги:
+\[m_{\text{л}}gs_1=m_{\text{п}}gs_2.\]
+<h4>3. Порівняємо рівняння.</h4>
+Праві частини однакові, отже
+\[m_{\text{л}}gs_1=m_{\text{гирі}}gs_1,\qquad m_{\text{л}}=m_{\text{гирі}}=1\,\text{кг}.\]
+Це метод заміщення. Відважену порцію беремо саме з лівої шальки.<br><strong>Відповідь:</strong> Зрівноважити гирю вишнями на іншій шальці, а потім замінити гирю вишнями до тієї самої рівноваги.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-110" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-110" aria-label="Посилання на задачу">#</a><h2>Задача 4.110. Два зважування одного вантажу</h2></header><div class="condition">Якщо вантаж підвісити до лівого кінця важеля, його зрівноважує гиря масою 9 кг на правому кінці. Якщо вантаж підвісити до правого кінця, його зрівноважує гиря масою 1 кг на лівому. Масою важеля знехтуйте. а) Яке відношення плечей? б) Яка маса вантажу?</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=9\,\text{кг}\)<br>
+\(m_2=1\,\text{кг}\)<br><hr><br> \(s_{\text{л}}/s_{\text{п}}-?\)<br>
+\(m-?\)</td><td class="reasoning"><h4>1. Запишемо обидві умови рівноваги.</h4>
+Після скорочення на \(g\):
+\[ms_{\text{л}}=m_1s_{\text{п}},\qquad ms_{\text{п}}=m_2s_{\text{л}}.\]
+<h4>2. Виключимо плечі.</h4>
+Перемножимо рівняння і скоротимо ненульовий добуток плечей:
+\[m^2=m_1m_2=9\,\text{кг}^2.\]
+Маса додатна. Оскільки \(3\cdot3=9\), отримуємо \(m=3\,\text{кг}\).
+<h4>3. Знайдемо відношення плечей.</h4>
+Із першої умови
+\[\frac{s_{\text{л}}}{s_{\text{п}}}=\frac{m_1}{m}=\frac93=3.\]
+Перевірка другої умови: \(3s_{\text{п}}=1\cdot3s_{\text{п}}\).<br><strong>Відповідь:</strong> а) \(s_{\text{л}}:s_{\text{п}}=3:1\); б) \(m=3\,\text{кг}\).</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-111" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-111" aria-label="Посилання на задачу">#</a><h2>Задача 4.111. Новий вантаж на тому самому важелі</h2></header><div class="condition">Вантажі масами 2 кг і 5 кг, підвішені до різних кінців важеля, зрівноважують один одного. Вантажем якої маси можна зрівноважити вантаж масою 10 кг, підвішений до одного з кінців цього важеля? Масою важеля знехтуйте.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_1=2\,\text{кг}\)<br>
+\(m_2=5\,\text{кг}\)<br>
+\(M=10\,\text{кг}\)<br><hr><br> \(m-?\)</td><td class="reasoning"><h4>1. Знайдемо відношення плечей.</h4>
+Нехай на плечі \(s_1\) спочатку висіло \(2\,\text{кг}\), на плечі \(s_2\) — \(5\,\text{кг}\). Тоді
+\[m_1s_1=m_2s_2,\qquad \frac{s_1}{s_2}=\frac52.\]
+<h4>2. Підвісимо 10 кг на довше плече \(s_1\).</h4>
+На іншому кінці має бути маса \(m\):
+\[Ms_1=ms_2,\qquad m=M\frac{s_1}{s_2}=10\cdot\frac52=25\,\text{кг}.\]
+<h4>3. Підвісимо 10 кг на коротше плече \(s_2\).</h4>
+\[Ms_2=ms_1,\qquad m=M\frac{s_2}{s_1}=10\cdot\frac25=4\,\text{кг}.\]
+Оскільки в умові не зазначено кінець для вантажу \(10\,\text{кг}\), потрібні обидва варіанти.<br><strong>Відповідь:</strong> \(25\,\text{кг}\), якщо 10 кг на довшому плечі; \(4\,\text{кг}\), якщо на коротшому.</td></tr></tbody></table></div></details></article>
+<article class="exercise" id="exercise-forces-4-112" data-topic="forces"><header class="exercise-header"><span class="topic-label">Сили в природі</span><a class="permalink" href="#exercise-forces-4-112" aria-label="Посилання на задачу">#</a><h2>Задача 4.112. Найбільший вантаж для системи блоків</h2></header><div class="condition">Яку найбільшу вагу вантажу може підняти людина масою 60 кг, стоячи на підлозі й використовуючи систему блоків на рис. 4.14? У системі три послідовно з’єднані рухомі блоки та один верхній нерухомий блок. Людина тягне вільний кінець мотузки вниз.</div><details class="solution"><summary>Показати розв’язання</summary><div class="table-scroll"><table><thead><tr><th scope="col">Дано</th><th scope="col">Розв’язання</th></tr></thead><tbody><tr><td class="given">\(m_{\text{л}}=60\,\text{кг}\)<br>
+\(g=10\,\text{Н/кг}\)<br>
+\(n_{\text{рух}}=3\)<br><hr><br> \(P_{\text{max}}-?\)</td><td class="reasoning"><h4>1. Визначимо виграш у силі.</h4>
+Кожний із трьох каскадних рухомих блоків подвоює силу, передану наступному. Якщо людина тягне із силою \(F\), верхній рухомий блок передає \(2F\), середній — \(4F\), нижній підтримує вантаж силою \(8F\):
+\[P=2\cdot2\cdot2F=8F.\]
+Блоки і мотузки вважаємо невагомими, тертям нехтуємо.
+<h4>2. Знайдемо найбільшу силу людини без додаткової опори.</h4>
+Мотузка діє на руки людини вгору. Її рівновага:
+\[N+F=m_{\text{л}}g,\qquad N=m_{\text{л}}g-F\geq0.\]
+Тому \(F\leq m_{\text{л}}g\). На межі відриву від підлоги
+\[F_{\text{max}}=60\cdot10=600\,\text{Н}.\]
+<h4>3. Обчислимо найбільшу вагу.</h4>
+\[P_{\text{max}}=8F_{\text{max}}=8\cdot600=4800\,\text{Н}.\]
+Такій вазі відповідає маса \(P_{\text{max}}/g=480\,\text{кг}\).<br><strong>Відповідь:</strong> Найбільша вага \(4800\,\text{Н}\) (маса вантажу \(480\,\text{кг}\)) в ідеальній системі.</td></tr></tbody></table></div></details></article></div><p id="empty" hidden>Задач не знайдено. Змініть запит або оберіть іншу тему.</p></main></div><noscript>Для пошуку та фільтрів увімкніть JavaScript. Умови й розв’язки доступні нижче.</noscript><footer><span>Фізика · Збірка для навчання</span><a href="exercises.tex" download>Вихідний LaTeX</a></footer>
 <script>
-(()=>{'use strict';const cards=[...document.querySelectorAll('.exercise')],search=document.querySelector('#search'),count=document.querySelector('#count'),rule=document.querySelector('#river-rule');let filter='all';const normalize=s=>s.toLocaleLowerCase('uk').normalize('NFKC').replace(/[’ʼ']/g,'').replace(/\\[a-z]+/gi,' ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();const text=new Map(cards.map(c=>[c,normalize(c.textContent)]));const links=new Map();cards.forEach(c=>{const a=document.createElement('a');a.href='#'+c.id;a.textContent=c.querySelector('h2').textContent;document.querySelector('#contents').append(a);links.set(c,a);});function apply(){const q=normalize(search.value);let n=0;cards.forEach(c=>{const visible=(filter==='all'||c.dataset.topic===filter)&&(!q||text.get(c).includes(q));c.hidden=!visible;links.get(c).hidden=!visible;if(visible)n++;});count.textContent=`Показано ${n} із ${cards.length} задач`;document.querySelector('#empty').hidden=n>0;rule.hidden=filter==='straight';}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();}));search.addEventListener('input',apply);document.querySelector('#expand').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=true));document.querySelector('#collapse').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=false));let printState;addEventListener('beforeprint',()=>{printState=[...document.querySelectorAll('details')].map(d=>[d,d.open]);printState.forEach(([d])=>d.open=true);});addEventListener('afterprint',()=>printState?.forEach(([d,open])=>d.open=open));document.querySelector('#print').addEventListener('click',()=>window.print());function deepLink(){const id=decodeURIComponent(location.hash.slice(1));const card=cards.find(c=>c.id===id);if(!card)return;filter='all';search.value='';document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));apply();card.querySelector('details').open=true;requestAnimationFrame(()=>card.scrollIntoView({block:'start'}));}addEventListener('hashchange',deepLink);apply();deepLink();})();
+(()=>{'use strict';const toolbar=document.querySelector('.toolbar');new ResizeObserver(()=>document.documentElement.style.setProperty('--nav-height',(toolbar.offsetHeight+16)+'px')).observe(toolbar);const cards=[...document.querySelectorAll('.exercise')],search=document.querySelector('#search'),count=document.querySelector('#count'),rule=document.querySelector('#river-rule');let filter='all';const normalize=s=>s.toLocaleLowerCase('uk').normalize('NFKC').replace(/[’ʼ']/g,'').replace(/\\[a-z]+/gi,' ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();const text=new Map(cards.map(c=>[c,normalize(c.textContent)]));const links=new Map();cards.forEach(c=>{const a=document.createElement('a');a.href='#'+c.id;a.textContent=c.querySelector('h2').textContent;document.querySelector('#contents').append(a);links.set(c,a);});function apply(){const q=normalize(search.value);let n=0;cards.forEach(c=>{const visible=(filter==='all'||c.dataset.topic===filter)&&(!q||text.get(c).includes(q));c.hidden=!visible;links.get(c).hidden=!visible;if(visible)n++;});count.textContent=`Показано ${n} із ${cards.length} задач`;document.querySelector('#empty').hidden=n>0;rule.hidden=!['all','river'].includes(filter);}document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();}));search.addEventListener('input',apply);document.querySelector('#expand').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=true));document.querySelector('#collapse').addEventListener('click',()=>cards.filter(c=>!c.hidden).forEach(c=>c.querySelector('details').open=false));let printState;addEventListener('beforeprint',()=>{printState=[...document.querySelectorAll('details')].map(d=>[d,d.open]);printState.forEach(([d])=>d.open=true);});addEventListener('afterprint',()=>printState?.forEach(([d,open])=>d.open=open));document.querySelector('#print').addEventListener('click',()=>window.print());function deepLink(){const id=decodeURIComponent(location.hash.slice(1));const card=cards.find(c=>c.id===id);if(!card)return;filter='all';search.value='';document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));apply();card.querySelector('details').open=true;requestAnimationFrame(()=>card.scrollIntoView({block:'start'}));}addEventListener('hashchange',deepLink);apply();deepLink();})();
 </script></body></html>
